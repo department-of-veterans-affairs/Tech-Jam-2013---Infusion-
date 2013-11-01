@@ -13,6 +13,8 @@ print('==> Dropping all current users in collection')
 client.db.users.drop()
 
 print('==> Inserting users parsed from data directory')
-client.db.users.insert(parser.parsed_obj)
+for obj in parser.parsed_objs:
+    print('====> Uploading the good veteran %s %s' % (obj['DEMOGRAPHICS']['First Name'], obj['DEMOGRAPHICS']['Last Name']))
+    client.db.users.insert(obj)
 
 print('==> Done!  Be sure to have fun at the hackathon.  ;)')

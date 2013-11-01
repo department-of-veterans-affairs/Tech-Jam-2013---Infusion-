@@ -1,8 +1,8 @@
 import re
+from os import listdir
+from os.path import isfile, join
 
-f = open('data/sample.txt')
-lines = f.readlines()
-f.close()
+onlyfiles = [ join('data', f) for f in listdir('data') if isfile(join('data',f)) ]
 
 def parse_kvp(targets, line):
     result = re.search('^([\w\s]+):(.*)$', line)
@@ -91,17 +91,21 @@ def parse_toplevel(sections, lines):
             pass # Just skip this section since not implemented yet
     return parsed_obj
 
-sections = []
-for index in range(len(lines)):
-    result = re.search('^-+\s([\w\s]+)\s-+$', lines[index])
-    if result is not None:
-        section_name = result.group(1)
-        if len(sections) > 0:
-            sections[-1].append(index)
-        sections.append([section_name, index])
-sections[-1].append(len(lines))
+parsed_objs = []
 
-print(sections)
+for file in onlyfiles:
+    f = open(file)
+    lines = f.readlines()
+    f.close()
 
-parsed_obj = parse_toplevel(sections, lines)
-print(parsed_obj)
+    sections = []
+    for index in range(len(lines)):
+        result = re.search('^-+\s([\w\s]+)\s-+$', lines[index])
+        if result is not None:
+            section_name = result.group(1)
+            if len(sections) > 0:
+                sections[-1].append(index)
+            sections.append([section_name, index])
+    sections[-1].append(len(lines))
+
+    parsed_objs.append(parse_toplevel(sections, lines))
