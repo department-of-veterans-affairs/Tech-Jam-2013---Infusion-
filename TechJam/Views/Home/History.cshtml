@@ -13,57 +13,61 @@
 </script>
 
 <div class="row">
-    <div class="col-lg-9">
-
-        <div class="row">
-            <h1 class="page-header">Recent History</h1>
-        </div>
-         
+    <div class="row">
+        <h1 class="page-header">Recent History</h1>
+    </div>
+    
+    <div class="col-lg-9" data-bind="foreach: historyEntries">
         <div class="row">
             <div class="col-lg-3">
                 
             </div>
             <div class="col-lg-9">
                 <div class="row">
-                    November 1st, 2013
+                    <span data-bind="text: date"></span>
                 </div>
 
                 <div class="row panel panel-default">
                     
-                    
-                    <div class="collapsible" id="section1">Heading<span></span></div>
+                    <div class="collapsible" id="section1">Vitals Recorded<span></span></div>
                     <div class="container">
-                        <div class="content">
-                            <div>Sample Content</div>
-                            <p>Content here....</p>
+                        <div class="content" data-bind="foreach: vitalsRecorded">
+                            <span data-bind="text: vital"></span>
+                            <span data-bind="text: measurement"></span>
                         </div>
                     </div>
-                    <div class="collapsible" id="section2">Heading<span></span></div>
-                    <div class="container">
-                        <div class="content">
-                            <div>Sample Content</div>
-                            <p>Content here....</p>
-                        </div>
-                    </div>
-                    <div class="collapsible" id="section3">Heading<span></span></div>
-                    <div class="container">
-                        <div class="content">
-                            <div>Sample Content</div>
-                            <p>Content here....</p>
-                        </div>
-                    </div>
-                    
 
+                    <div class="collapsible" id="section2">Diagnosis<span></span></div>
+                    <div class="container">
+                        <div class="content">
+                            <span data-bind="text: diagnosis"></span>
+                        </div>
+                    </div>
+
+                    <div class="collapsible" id="section3">Insurance Info<span></span></div>
+                    <div class="container">
+                        <div class="content">
+                            <span data-bind="text: insuranceInfo"></span>
+                        </div>
+                    </div>
+
+                    <div class="collapsible" id="section4">Files<span></span></div>
+                    <div class="container">
+                        <div class="content">
+                            <span data-bind="text: files"></span>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-        </div>
-        <hr />
-        
-        <div class="row">
-            <h1 class="page-header">History Entry</h1>
+            <hr />
         </div>
     </div>
     <div class="col-lg-3 text-center">
         calendar here           
     </div>
 </div>
+<script src="@Url.Content("~/Scripts/knockout-2.2.0.js")"></script>
+<script src="@Url.Content("~/Scripts/knockout.mapping-latest.js")"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8b1xMywEqKNmqD9-CF-U_tZCWxdj6hLg&sensor=false"></script>
+<script src="@Url.Content("~/Scripts/history.js")"></script>
