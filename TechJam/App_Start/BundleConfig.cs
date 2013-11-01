@@ -23,8 +23,8 @@ namespace TechJam
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/css/bootstrap.css","~/Content/css/sb-admin.css"));
-            bundles.Add(new StyleBundle("~/Content/font-awesome").Include("~/Content/font-awesome/css/font-awesome.min.css"));
+            bundles.Add(new StyleBundle("~/Styles/css").Include("~/Content/css/bootstrap.css","~/Content/css/sb-admin.css"));
+            bundles.Add(new StyleBundle("~/Styles/font-awesome").Include("~/Content/font-awesome/css/font-awesome.min.css"));
 
 
         }
