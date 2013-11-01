@@ -231,6 +231,7 @@
     <None Include="Properties\PublishProfiles\infjam - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\infjam - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\appointment.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\doctor.js" />
     <Content Include="Scripts\flot\chart-data-flot.js" />
