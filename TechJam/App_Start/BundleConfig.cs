@@ -26,7 +26,7 @@ namespace TechJam
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Styles/css").Include("~/Content/css/bootstrap.css", "~/Content/css/sb-admin.css", "~/Content/css/form.css"));
+            bundles.Add(new StyleBundle("~/Styles/css").Include("~/Content/css/bootstrap.css", "~/Content/css/sb-admin.css", "~/Content/css/form.css", "~/Content/css/MasterStyles.css"));
             bundles.Add(new StyleBundle("~/Styles/font-awesome").Include("~/Content/font-awesome/css/font-awesome.min.css"));
 
 
