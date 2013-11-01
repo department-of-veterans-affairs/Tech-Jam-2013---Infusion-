@@ -52,18 +52,18 @@ Morris.Area({
   pointFillColors: ['#3f2353']
 });
 
-Morris.Donut({
-  element: 'morris-chart-donut',
-  data: [
-    {label: "Referral", value: 42.7},
-    {label: "Direct", value: 8.3},
-    {label: "Social", value: 12.8},
-    {label: "Organic", value: 36.2}
-  ],
-  formatter: function (y) { return y + "%"; },
-backgroundColor: ['#302050 '],
-colors: ['#3f2353']
-});
+//Morris.Donut({
+//  element: 'morris-chart-donut',
+//  data: [
+//    {label: "Referral", value: 42.7},
+//    {label: "Direct", value: 8.3},
+//    {label: "Social", value: 12.8},
+//    {label: "Organic", value: 36.2}
+//  ],
+//  formatter: function (y) { return y + "%"; },
+//backgroundColor: ['#302050 '],
+//colors: ['#3f2353']
+//});
 
 Morris.Line({
   // ID of the element in which to draw the chart.
