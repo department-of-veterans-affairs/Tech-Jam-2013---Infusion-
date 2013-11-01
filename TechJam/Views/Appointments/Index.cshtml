@@ -23,19 +23,21 @@
     </div>
 </h1> 
 
-
-
-
-<div class="row">
+<div class="row" data-bind="foreach: appointments">
     <div class="col-lg-2">
-        <div class="panel panel-default">
-            date and time<br/>
-            doctor name<br/>
-            type of appointment<br/>
-            phone number<br/>
-            map link
+        <div class="thumbnail">
+                <span data-bind="text: date"></span><br/>
+                <span data-bind="text: time"></span><br/>
+                <span data-bind="text: doctor"></span><br/>
+                <span data-bind="text: type"></span><br/>
+                <span data-bind="text: phoneNumber"></span>
         </div>
     </div>
 </div>
 
 <hr/>
+
+<script src="@Url.Content("~/Scripts/knockout-2.2.0.js")"></script>
+<script src="@Url.Content("~/Scripts/knockout.mapping-latest.js")"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8b1xMywEqKNmqD9-CF-U_tZCWxdj6hLg&sensor=false"></script>
+<script src="@Url.Content("~/Scripts/appointment.js")"></script>

@@ -20,5 +20,13 @@ namespace TechJam.Controllers
             return Content(MongoDB.Bson.BsonExtensionMethods.ToJson(allUsers), "application/json");
         }
 
+        public ActionResult News()
+        {
+            var connectionString = "mongodb://infjam.cloudapp.net:27017/";
+            var db = new MongoClient(connectionString).GetServer().GetDatabase("db");
+            var all = db.GetCollection("news").FindAll();
+            return Content(MongoDB.Bson.BsonExtensionMethods.ToJson(all), "application/json");
+        }
+
     }
 }
