@@ -77,7 +77,6 @@
         var historyEntry = new HistoryEntry();
         historyEntry.id(historyEntries[i].id);
 
-        debugger;
         for (var j = 0; j < historyEntries[i].vitalsRecorded.length; j++) {
             historyEntry.vitalsRecorded.push({ vital: historyEntries[i].vitalsRecorded[j].vital, measurement: historyEntries[i].vitalsRecorded[j].measurement });
         }
