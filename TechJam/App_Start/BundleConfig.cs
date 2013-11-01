@@ -27,9 +27,6 @@ namespace TechJam
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new StyleBundle("~/Styles/css").Include("~/Content/css/bootstrap.css", "~/Content/css/sb-admin.css", "~/Content/css/form.css", "~/Content/css/MasterStyles.css"));
-            bundles.Add(new StyleBundle("~/Styles/fontawesome").Include("~/Content/font-awesome/css/font-awesome.min.css"));
-
-
         }
     }
 }
