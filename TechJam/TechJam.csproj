@@ -286,7 +286,8 @@
     <Content Include="Views\Home\History.cshtml" />
     <Content Include="Views\Home\Doctors.cshtml" />
     <Content Include="Views\Home\Appointments.cshtml" />
-    <Content Include="Views\Home\GoalsAndInformation.cshtml" />
+    <Content Include="Views\Home\Goals.cshtml" />
+    <Content Include="Views\Home\Documents.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
