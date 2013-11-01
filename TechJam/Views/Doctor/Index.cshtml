@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Doctors";
+}
+<script>
+    $('#nav-doctor').addClass('active');
+</script>
+<h2>Doctors</h2>
+
+<div class="row">
+    @for (int i = 0; i < 12; i++)
+    {
+        <div class="col-lg-2">
+            <div class="thumbnail">
+                <img src="http://www.fillmurray.com/220/220" alt="Bill Murray"/>
+                <div class="caption">
+                    <h3>@Html.ActionLink("Bill Murray", "History", "Home")</h3>
+                </div>
+            </div>
+        </div>
+        
+    }
+
+</div>

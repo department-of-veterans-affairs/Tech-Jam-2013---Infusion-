@@ -7,11 +7,12 @@
     <meta name="author" content="">
 
         <title>@ViewBag.Title</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Styles/css")
         @Styles.Render("~/Styles/font-awesome")
         @Scripts.Render("~/bundles/modernizr")
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     </head>
   <body>
 
@@ -26,18 +27,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">MetLife</a>
+          <a class="navbar-brand" href="@Url.Action("Index", "Home")">MetLife</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
-            <li class="active"><a href="@Url.Action("Index", "Home")"><i class="icon-dashboard"></i> Overview</a></li>
-            <li><a href="@Url.Action("History", "Home")"><i class="icon-bar-chart"></i> History</a></li>
-            <li><a href="@Url.Action("Doctors", "Home")"><i class="icon-table"></i> Doctors</a></li>
-            <li><a href="@Url.Action("Appointments", "Home")"><i class="icon-edit"></i> Appointments</a></li>
-            <li><a href="@Url.Action("Goals", "Home")"><i class="icon-font"></i> Goals</a></li>
-            <li><a href="@Url.Action("Documents", "Home")"><i class="icon-font"></i> Documents</a></li>
+            <li id="nav-overview"><a href="@Url.Action("Index", "Home")"><i class="icon-dashboard"></i> Overview</a></li>
+            <li id="nav-history"><a href="@Url.Action("History", "Home")"><i class="icon-bar-chart"></i> History</a></li>
+            <li id="nav-doctor"><a href="@Url.Action("Index", "Doctor")"><i class="icon-table"></i> Doctors</a></li>
+            <li id="nav-appointment"><a href="@Url.Action("Appointments", "Home")"><i class="icon-edit"></i> Appointments</a></li>
+            <li id="nav-goals"><a href="@Url.Action("Goals", "Home")"><i class="icon-font"></i> Goals</a></li>
+            <li id="nav-documents"><a href="@Url.Action("Documents", "Home")"><i class="icon-font"></i> Documents</a></li>
          </ul>
 
           <ul class="nav navbar-nav navbar-right navbar-user">
@@ -108,8 +109,6 @@
 
     </div><!-- /#wrapper -->
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="@Url.Content("~/Scripts/bootstrap.js")"></script>
     <!-- Page Specific Plugins -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
