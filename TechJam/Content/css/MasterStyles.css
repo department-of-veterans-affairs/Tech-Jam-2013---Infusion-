@@ -82,3 +82,7 @@ div.content ul li a {
 code {
     overflow:auto;
 }
+
+#weight-chart {
+    height: 300px;
+}

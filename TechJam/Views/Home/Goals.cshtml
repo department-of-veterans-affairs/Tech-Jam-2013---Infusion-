@@ -1,8 +1,14 @@
 ﻿@{
-    ViewBag.Title = "GoalsAndInformation";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Goals";
 }
 <script>
     $('#nav-goals').addClass('active');
 </script>
-<h2>GoalsAndInformation</h2>
+<h1>Goals</h1>
+<h2 id="weight-goal">Weight</h2>
+Your goal weight: 178lbs
+<div id="weight-chart"/>
+<script src="@Url.Content("~/Scripts/flot/jquery.flot.js")"></script>
+<script src="@Url.Content("~/Scripts/flot/jquery.flot.time.js")"></script>
+<script src="@Url.Content("~/Scripts/goals.js")"></script>
+
