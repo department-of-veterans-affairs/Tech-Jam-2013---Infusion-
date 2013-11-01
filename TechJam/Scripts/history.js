@@ -18,10 +18,10 @@
                 }
             ],
             diagnosis: 'good',
-            insuranceInfo: 'something?',
+            insuranceInfo: 'something else ya',
             files: 'something?',
             title: 'General Appt',
-            imgUrl: '',
+            imgUrl: 'http://nicenicejpg.com/220/220',
             date: 'January 4, 2014'
         },
         {
@@ -37,10 +37,10 @@
                 }
             ],
             diagnosis: 'also good',
-            insuranceInfo: 'something?',
+            insuranceInfo: 'something else',
             files: 'something?',
             title: 'General Appt',
-            imgUrl: '',
+            imgUrl: 'http://nicenicejpg.com/220/220',
             date: 'December 21, 2014'
         }];
 
@@ -77,7 +77,8 @@
         var historyEntry = new HistoryEntry();
         historyEntry.id(historyEntries[i].id);
 
-        for (var j = 0; j < historyEntry.vitalsRecorded.length; j++) {
+        debugger;
+        for (var j = 0; j < historyEntries[i].vitalsRecorded.length; j++) {
             historyEntry.vitalsRecorded.push({ vital: historyEntries[i].vitalsRecorded[j].vital, measurement: historyEntries[i].vitalsRecorded[j].measurement });
         }
         
@@ -86,10 +87,16 @@
         historyEntry.title(historyEntries[i].title);
         historyEntry.imgUrl(historyEntries[i].imgUrl);
         historyEntry.date(historyEntries[i].date);
+        historyEntry.insuranceInfo(historyEntries[i].insuranceInfo);
         vm.historyEntries.push(historyEntry);
     }
 
     ko.applyBindings(vm);
+    
+    $('.collapsible').collapsible({
+        //defaultOpen: 'section1'
+    });
+
     var mapOptions = {
         zoom: 8,
         center: new google.maps.LatLng(-34.397, 150.644),
