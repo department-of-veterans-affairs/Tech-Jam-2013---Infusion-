@@ -83,6 +83,6 @@ code {
     overflow:auto;
 }
 
-#weight-chart {
+.goal-chart {
     height: 300px;
 }
