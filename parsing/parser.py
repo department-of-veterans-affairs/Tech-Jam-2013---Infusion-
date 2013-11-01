@@ -31,12 +31,32 @@ def parse_demographics(name, lines):
                'Pager Number', 'Cell Phone Number', 'FAX Number', 'Email Address', 'Preferred Method of Contact']
     return (name, parse_simple(targets, lines))
 
+def parse_vitals(name, lines):
+    targets = ['Source']
+    return (name, parse_simple(targets, lines))
+
+def parse_medical_events(name, lines):
+    targets = ['Source']
+    return (name, parse_simple(targets, lines))
+
+def parse_healthcare_providers(name, lines):
+    targets = ['Source']
+    return (name, parse_simple(targets, lines))
+
+def parse_wellness_reminders(name, lines):
+    targets = ['Source', 'Last Updated']
+    return (name, parse_simple(targets, lines))
+
 def parse_toplevel(sections, lines):
     parsed_obj = {}
     for section in sections:
         try:
             name, obj = {
-                'DEMOGRAPHICS': parse_demographics
+                'DEMOGRAPHICS': parse_demographics,
+                'VITALS AND READINGS': parse_vitals,
+                'MEDICAL EVENTS': parse_medical_events,
+                'VA WELLNESS REMINDERS': parse_wellness_reminders,
+                'HEALTH CARE PROVIDERS': parse_healthcare_providers
             }[section[0]](section[0], lines[section[1]:section[2]])
             parsed_obj[name] = obj
         except KeyError:
