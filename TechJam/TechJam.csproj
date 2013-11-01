@@ -194,6 +194,7 @@
     <Compile Include="Controllers\DoctorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MongoController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -228,11 +229,22 @@
     <Content Include="font\fontawesome-webfont.ttf" />
     <Content Include="font\fontawesome-webfont.woff" />
     <Content Include="font\FontAwesome.otf" />
+    <Content Include="Content\css\form.css" />
     <None Include="Properties\PublishProfiles\infjam - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\infjam - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Images\disease.jpg" />
+    <Content Include="Images\fitness.jpg" />
+    <Content Include="Images\genetics.jpg" />
+    <Content Include="Images\insurance.jpg" />
+    <Content Include="Images\nutrition.jpg" />
+    <Content Include="Images\politics.jpg" />
+    <Content Include="Images\prevention.jpg" />
+    <Content Include="Images\research.jpg" />
+    <Content Include="Images\technology.jpg" />
     <Content Include="Scripts\appointment.js" />
     <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\history.js" />
     <Content Include="Scripts\doctor.js" />
     <Content Include="Scripts\flot\chart-data-flot.js" />
     <Content Include="Scripts\flot\excanvas.min.js" />
@@ -241,6 +253,7 @@
     <Content Include="Scripts\flot\jquery.flot.resize.js" />
     <Content Include="Scripts\flot\jquery.flot.time.js" />
     <Content Include="Scripts\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="Scripts\custom-form-elements.js" />
     <Content Include="Scripts\goals.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -307,6 +320,8 @@
     <Content Include="Views\Home\Documents.cshtml" />
     <Content Include="Views\Doctor\News.cshtml" />
     <Content Include="Views\Doctor\PostNews.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\News\Select.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

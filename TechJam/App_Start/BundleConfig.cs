@@ -11,6 +11,9 @@ namespace TechJam
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/custom-form").Include(
+                        "~/Scripts/custom-form-elements.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/Scripts/jquery-ui-{version}.js"));
 
@@ -23,7 +26,7 @@ namespace TechJam
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Styles/css").Include("~/Content/css/bootstrap.css","~/Content/css/sb-admin.css","~/Content/css/MasterStyles.css"));
+            bundles.Add(new StyleBundle("~/Styles/css").Include("~/Content/css/bootstrap.css", "~/Content/css/sb-admin.css", "~/Content/css/form.css", "~/Content/css/MasterStyles.css"));
             bundles.Add(new StyleBundle("~/Styles/fontawesome").Include("~/Content/font-awesome/css/font-awesome.min.css"));
 
 

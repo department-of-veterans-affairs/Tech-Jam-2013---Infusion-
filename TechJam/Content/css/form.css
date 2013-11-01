@@ -1,0 +1,61 @@
+﻿.checkbox {
+	width: 190px;
+	height: 80px;
+	padding: 0 5px 0 0;
+    margin-bottom: 13px;
+	display: block;
+	clear: left;
+	float: left;
+}
+
+.checkbox1 {
+    background: url(/Images/disease.jpg) no-repeat 0px -80px;
+}
+
+.checkbox2 {
+    background: url(/Images/fitness.jpg) no-repeat 0px -80px;
+}
+
+.checkbox3 {
+    background: url(/Images/genetics.jpg) no-repeat 0px -80px;
+}
+
+.checkbox4 {
+    background: url(/Images/insurance.jpg) no-repeat 0px -80px;
+}
+
+.checkbox5 {
+    background: url(/Images/nutrition.jpg) no-repeat 0px -80px;
+}
+
+.checkbox6 {
+    background: url(/Images/politics.jpg) no-repeat 0px -80px;
+}
+
+.checkbox7 {
+    background: url(/Images/prevention.jpg) no-repeat 0px -80px;
+}
+
+.checkbox8 {
+    background: url(/Images/research.jpg) no-repeat 0px -80px;
+}
+
+.checkbox9 {
+    background: url(/Images/technology.jpg) no-repeat 0px -80px;
+}
+
+.tile-col-width
+{
+    width: 200px;
+}
+
+.select {
+	position: absolute;
+	width: 158px; /* With the padding included, the width is 190 pixels: the actual width of the image. */
+	height: 21px;
+	padding: 0 24px 0 8px;
+	color: #fff;
+	font: 12px/21px arial,sans-serif;
+	background: url(select.png) no-repeat;
+	overflow: hidden;
+}
