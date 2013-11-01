@@ -4,7 +4,14 @@
 }
 <script>
     $('#nav-history').addClass('active');
+    $(document).ready(function () {
+        //collapsible management
+        $('.collapsible').collapsible({
+            defaultOpen: 'section1'
+        });
+    });
 </script>
+
 <div class="row">
     <div class="col-lg-9">
 
@@ -13,8 +20,44 @@
         </div>
          
         <div class="row">
-            <h1 class="page-header">History Entry</h1>
+            <div class="col-lg-3">
+                
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    November 1st, 2013
+                </div>
+
+                <div class="row panel panel-default">
+                    
+                    
+                    <div class="collapsible" id="section1">Heading<span></span></div>
+                    <div class="container">
+                        <div class="content">
+                            <div>Sample Content</div>
+                            <p>Content here....</p>
+                        </div>
+                    </div>
+                    <div class="collapsible" id="section2">Heading<span></span></div>
+                    <div class="container">
+                        <div class="content">
+                            <div>Sample Content</div>
+                            <p>Content here....</p>
+                        </div>
+                    </div>
+                    <div class="collapsible" id="section3">Heading<span></span></div>
+                    <div class="container">
+                        <div class="content">
+                            <div>Sample Content</div>
+                            <p>Content here....</p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
         </div>
+        <hr />
         
         <div class="row">
             <h1 class="page-header">History Entry</h1>
