@@ -1,0 +1,295 @@
+----------------------------- DEMOGRAPHICS ----------------------------
+
+Source: Self-Entered
+
+First Name: Jane
+Middle Initial: A
+Last Name: Williams
+Suffix: 
+Alias: MHVVET
+Relationship to VA: Patient, Veteran, Employee
+
+Gender: Female   Blood Type: AB+         Organ Donor: Yes
+
+Date of Birth: 01 Mar 1978
+Marital Status: Married
+Current Occupation: Media Services
+
+Mailing or Destination Address: 123 Anywhere Road
+Mailing or Destination Address2: Apartment 123
+Mailing or Destination City: New York City
+Mailing or Destination State: NY
+Mailing or Destination Country: United States
+Mailing or Destination Province: 
+Mailing or Destination Zip/Postal Code: 10024
+
+Home Phone Number: 000-010-0101
+Work Phone Number: 000-020-0202
+Pager Number: 000-030-0303
+Cell Phone Number: 000-040-0404
+FAX Number: 000-050-0505
+Email Address: techjam.jane.williams@gmail.com
+Preferred Method of Contact: Email
+
+EMERGENCY CONTACTS
+
+Contact First Name: Two
+Contact Last Name: Williams
+Relationship: Husband
+Home Phone Number: 000-010-0101
+Work Phone Number: 000-060-0606  Extension: 
+Cell Phone Number: 000-070-0707
+Address Line 1: 123 Anywhere Road
+Address Line 2: Apartment 123
+City: New York
+State: NY
+Country: United States
+Province: 
+Zip/Post Code: 10024
+Email Address: techjam.michael.williams@domain.com
+
+Contact First Name: Three
+Contact Last Name: Jones
+Relationship: 
+Home Phone Number: 000-010-0101
+Work Phone Number: 000-080-0808  Extension: 
+Cell Phone Number: 000-090-0909
+Address Line 1: 123 Anywhere Road
+Address Line 2: Apartment 123
+City: Philadelphia
+State: PA
+Country: United States
+Province: 
+Zip/Post Code: 00001
+Email Address: noone@domain.com
+
+------------------------- HEALTH CARE PROVIDERS -------------------------
+
+Source: Self-Entered
+
+Provider Name: John Doerr
+Type of Provider: Primary
+Other Clinician Information:  
+Phone Number: 000-000-0000    Ext: 1234
+Email: provider@institution.org
+Comments: Dr. Doerr can be reached on the weekend if needed by leaving a message 
+with the clinic. 
+
+Provider Name: Mariah Smith
+Type of Provider: Specialist
+Other Clinician Information: Seen as needed
+Phone Number: 000-000-0001    Ext: 1234
+Email: techjam.jane.smith@gmail.com
+Comments: Dr. Smith should be notified of any changes in my medical condition. 
+Requires a referral from my health insurance company.
+
+--------------------------- HEALTH INSURANCE ----------------------------
+
+Source: Self-Entered
+
+Health Insurance Company: My Health Insurance Company
+Primary Insurance Provider: Yes
+ID Number: 0001234                      Group Number: 0000000
+Insured: One Mhvveteran
+Start Date: 01 Jan 2000                 Stop Date: 
+Pre-Approval Phone Number:              000-000-0003
+Health Insurance Company Phone Number:  000-000-0004
+Comments: Need to get pre-authorization for special services. 
+
+Health Insurance Company: My Other Health Insurance Company
+Primary Insurance Provider: No
+ID Number: 000567891010                 Group Number: ABC123456789
+Insured: One Mhvveteran
+Start Date: 01 Jan 2009                 Stop Date: 
+Pre-Approval Phone Number:              000-000-0005
+Health Insurance Company Phone Number:  000-000-0005
+Comments: Coverage only for vision and dental. 
+
+---------------------------- VA WELLNESS REMINDERS -------------------------
+
+Source: VA
+Last Updated: 02 Dec 2011 @ 0706
+
+Wellness Reminder                  Due Date    Last Completed   Location
+----------------------------------------------------------------------------    
+Colon Cancer Screening             DUE NOW     UNKNOWN          DAYT29      
+Influenza Vaccine                  DUE NOW     UNKNOWN          DAYT29      
+
+Learn more about these Wellness Reminders by visiting My HealtheVet.
+Please contact your health care team with any questions about your VA
+Wellness Reminders.
+
+
+--------------------------- VA APPOINTMENTS -----------------------------
+
+Source: VA
+Last Updated: 02 Dec 2011 @ 0706
+
+VA Past Appointments are limited to two years from the date of your
+download request.
+
+FUTURE APPOINTMENTS:
+--------------------
+Date/Time:      13 Oct 2012 @ 1100
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         C&P CHRISTIE
+Phone Number:   3929
+Type:           Compensation and Pension Appointment
+
+
+PAST APPOINTMENTS:
+--------------------
+Date/Time:      13 Oct 2011 @ 1600
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         C&P CHRISTIE
+Phone Number:   3929
+Type:           Compensation and Pension Appointment
+
+Date/Time:      07 Sep 2011 @ 1100
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         TELEPHONE CALLS/GERIATRICS
+Phone Number:   3742
+
+Date/Time:      27 Jul 2011 @ 1400
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         DIABETIC-BURKE
+Phone Number:   800-123-1234
+Note:           This appointment has pre-appointment activity scheduled:
+                Lab:    27 Jul 2011 @ 1000
+
+Date/Time:      15 Jun 2011 @ 1300
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         DIABETIC-BURKE
+Phone Number:   800-123-1234
+Note:           This appointment has pre-appointment activity scheduled:
+                Lab:    15 Jun 2011 @ 0800
+                EKG:    15 Jun 2011 @ 1030
+                X-Ray:  15 Jun 2011 @ 0900
+
+Date/Time:      03 May 2011 @ 1100
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         TELEPHONE CALLS/GERIATRICS
+Phone Number:   3742
+Note:           This appointment has pre-appointment activity scheduled:
+                X-Ray:  03 May 2011 @ 0800
+
+Date/Time:      15 Mar 2011 @ 1000
+Location:       MIDDLETOWN
+Status:         CANCELLED
+Clinic:         MD/DENTAL FOSTER
+Phone Number:   2449
+Note:           This appointment has pre-appointment activity scheduled:
+                Lab:    15 Mar 2011 @ 0930
+
+Date/Time:      06 Jan 2011 @ 1000
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         PRP JOHNSON,C (GRP)
+Phone Number:   2188
+Note:           This appointment has pre-appointment activity scheduled:
+                Lab:    06 Jan 2011 @ 0900
+                EKG:    06 Jan 2011 @ 0930
+
+Date/Time:      03 Jan 2011 @ 1300
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         PRP JOHNSON,C (GRP)
+Phone Number:   2188
+
+Date/Time:      29 Dec 2010 @ 1000
+Location:       MIDDLETOWN
+Status:         NOT APPLICABLE
+Clinic:         MD/PODIATRY NGUYEN (Follow-Up)
+Phone Number:   5416
+
+Date/Time:      30 Aug 2010 @ 1400
+Location:       DAYT29 TEST LAB
+Status:         APPOINTMENT KEPT
+Clinic:         TELEPHONE CALLS/GERIATRICS
+Phone Number:   3742
+
+Date/Time:      14 Jul 2010 @ 0900
+Location:       MIDDLETOWN
+Status:         NOT APPLICABLE
+Clinic:         MD/PODIATRY NGUYEN (Follow-Up)
+Phone Number:   5416
+
+------------------------------ MEDICAL EVENTS -------------------------------
+
+Source: Self-Entered
+
+Medical Event:   Colonoscopy
+Start Date:      18 Mar 2000
+Stop Date:       18 Mar 2000
+
+Response: Colonoscopy when well 
+
+Comments: Polyps were removed.  Doctor said these were benign 
+
+Medical Event:   Broken right arm
+Start Date:      04 Jan 2010
+Stop Date:       17 Feb 2010
+
+Response: Placed in cast from my hand to my elbow 
+
+Comments: Went to community hospital emergency room since I was on vacation.  
+Followed up with my VA doctor when I returned home.
+
+----------------------------- VITALS AND READINGS ---------------------------
+
+Source: Self-Entered
+
+===============================================================================
+Measurement Type: Blood pressure
+Date: 02 Aug 2010
+Time: 1720
+Systolic: 130
+Diastolic: 76
+
+Comments: BP taken lying down 
+===============================================================================
+Measurement Type: Blood pressure
+Date: 02 Aug 2010
+Time: 1730
+Systolic: 132
+Diastolic: 76
+
+Comments: BP taken standing.  BP continues at goal.  Doctor says to continue BP 
+medications as directed 
+===============================================================================
+Measurement Type: Heart rate 
+Date: 02 Jun 2010
+Time: 1720
+Heart Rate: 160
+
+Comments: I wasn't feeling well but temperature is normal 
+===============================================================================
+Measurement Type: Pain
+Date: 01 Jan 2010
+Time: 1720
+Pain Level: 7
+
+Comments: Lower back pain - took 1 Ibuprofen with food for pain 
+===============================================================================
+Measurement Type: Blood sugar
+Date: 02 Jan 2010
+Time: 1720
+Method: Sterile Lancet
+Blood sugar count: 166
+
+Comments: BS taken before meal 
+===============================================================================
+Measurement Type: Cholesterol
+Date: 15 Aug 2010
+Time: 2359
+Total cholesterol: 142
+HDL: 45
+LDL: 
+
+Comments: Lab result from community health fair.
