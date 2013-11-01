@@ -31,6 +31,33 @@ def parse_demographics(name, lines):
                'Pager Number', 'Cell Phone Number', 'FAX Number', 'Email Address', 'Preferred Method of Contact']
     return (name, parse_simple(targets, lines))
 
+def parse_subtarget(name, targets, lines):
+    for i in range(len(lines)):
+        line = lines[i].rstrip()
+        if line == name + ":":
+            simple = parse_simple(targets, lines[i+1:len(lines)])
+            return simple
+
+
+def parse_va_appointments(name, lines):
+    targets = ['Source', 'Last Updated']
+
+
+    simple = parse_simple(targets, lines)
+    res = {}
+
+    res = dict(simple.items())
+
+    future_appointments = 'FUTURE APPOINTMENTS'
+    future_appointments_subtargets = ['Date/Time', 'Location', 'Status', 'Clinic', 'Phone Number', 'Type']
+    res[future_appointments] = parse_subtarget(future_appointments, future_appointments_subtargets, lines)
+
+    past_appointments = 'PAST APPOINTMENTS'
+    past_appointments_subtargets = ['Date/Time', 'Location', 'Status', 'Clinic', 'Phone Number', 'Type', 'Note']
+    res[past_appointments] = parse_subtarget(past_appointments, past_appointments_subtargets, lines)
+
+    return (name, res)
+
 def parse_vitals(name, lines):
     targets = ['Source']
     return (name, parse_simple(targets, lines))
@@ -56,7 +83,8 @@ def parse_toplevel(sections, lines):
                 'VITALS AND READINGS': parse_vitals,
                 'MEDICAL EVENTS': parse_medical_events,
                 'VA WELLNESS REMINDERS': parse_wellness_reminders,
-                'HEALTH CARE PROVIDERS': parse_healthcare_providers
+                'HEALTH CARE PROVIDERS': parse_healthcare_providers,
+                'VA APPOINTMENTS' : parse_va_appointments
             }[section[0]](section[0], lines[section[1]:section[2]])
             parsed_obj[name] = obj
         except KeyError:
