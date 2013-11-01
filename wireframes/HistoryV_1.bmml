@@ -1,0 +1,73 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="941" measuredH="581" mockupW="927" mockupH="571">
+  <controls>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="14" y="10" w="927" h="571" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Nightingale</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="20" y="139" w="921" h="414" measuredW="200" measuredH="242" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>1</selectedIndex>
+        <text>Overview%0AHistory%0ADoctors%0AAppointments%0AGoals%0ADocuments</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Image" x="18" y="85" w="550" h="54" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Link" x="836" y="93" w="-1" h="-1" measuredW="90" measuredH="19" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Login/Sign%20Out</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::HRule" x="171" y="195" w="614" h="-1" measuredW="100" measuredH="10" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::HRule" x="171" y="349" w="614" h="-1" measuredW="100" measuredH="10" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::HRule" x="171" y="517" w="614" h="-1" measuredW="100" measuredH="10" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Paragraph" x="817" y="160" w="109" h="199" measuredW="200" measuredH="80" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>2013%0A%20-%20January%0A%20-%20February%0A%20-%20March%0A2012%0A2011%0A2010%0A2009%0A2008</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::IconLabel" x="171" y="208" w="-1" h="-1" measuredW="90" measuredH="63" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Specialist%20Appt</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::IconLabel" x="161" y="359" w="-1" h="-1" measuredW="111" measuredH="63" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>General%20Care%20Appt</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Label" x="287" y="205" w="-1" h="-1" measuredW="106" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>November%201%2C%202013</text>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::Label" x="287" y="359" w="-1" h="-1" measuredW="106" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>November%201%2C%202013</text>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::SubTitle" x="171" y="160" w="244" h="-1" measuredW="163" measuredH="27" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Recent%20History</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::DateChooser" x="817" y="309" w="-1" h="-1" measuredW="90" measuredH="25" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20%20/%20%20/%20%20%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::TextArea" x="287" y="229" w="483" h="112" measuredW="200" measuredH="140" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>+%20Vitals%20Recorded%0A+%20Diagnosis%0A+%20Insurance%20Info%0A+%20Files</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::TextArea" x="287" y="380" w="483" h="126" measuredW="200" measuredH="140" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>+%20Vitals%20Recorded%0A+%20Diagnosis%0A+%20Insurance%20Info%0A+%20Referral</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
