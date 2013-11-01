@@ -218,8 +218,8 @@
     <Content Include="font\fontawesome-webfont.ttf" />
     <Content Include="font\fontawesome-webfont.woff" />
     <Content Include="font\FontAwesome.otf" />
-    <None Include="Properties\PublishProfiles\cogpp - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\cogpp - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\infjam - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\infjam - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\flot\chart-data-flot.js" />
@@ -286,7 +286,8 @@
     <Content Include="Views\Home\History.cshtml" />
     <Content Include="Views\Home\Doctors.cshtml" />
     <Content Include="Views\Home\Appointments.cshtml" />
-    <Content Include="Views\Home\GoalsAndInformation.cshtml" />
+    <Content Include="Views\Home\Goals.cshtml" />
+    <Content Include="Views\Home\Documents.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -310,7 +311,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>42823</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:40237/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
