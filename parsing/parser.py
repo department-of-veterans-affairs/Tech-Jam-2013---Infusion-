@@ -25,7 +25,10 @@ def parse_simple(targets, lines):
     return kvs
 
 def parse_demographics(name, lines):
-    targets = ['Source', 'First Name']
+    targets = ['Source', 'First Name', 'Middle Initial', 'Last Name', 'Suffix', 'Alias', 'Relationship to VA', 'Date of Birth', 'Marital Status', 'Current Occupation',
+               'Mailing or Destination Address', 'Mailing or Destination Address2', 'Mailing or Destination City', 'Mailing or Destination State',
+               'Mailing or Destination Country', 'Mailing or Destination Province', 'Mailing or Destination Zip/Postal Code', 'Home Phone Number', 'Work Phone Number',
+               'Pager Number', 'Cell Phone Number', 'FAX Number', 'Email Address', 'Preferred Method of Contact']
     return (name, parse_simple(targets, lines))
 
 def parse_toplevel(sections, lines):
