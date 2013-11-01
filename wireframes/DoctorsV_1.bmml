@@ -1,0 +1,82 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1269" measuredH="581" mockupW="1255" mockupH="571">
+  <controls>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="14" y="10" w="927" h="571" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Nightingale</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="14" y="133" w="921" h="414" measuredW="200" measuredH="242" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>2</selectedIndex>
+        <text>Overview%0AHistory%0ADoctors%0AAppointments%0AGoals%0ADocuments</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Image" x="18" y="85" w="550" h="54" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Link" x="836" y="93" w="-1" h="-1" measuredW="90" measuredH="19" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Login/Sign%20Out</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::IconLabel" x="171" y="202" w="-1" h="-1" measuredW="86" measuredH="63" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Dr.%20Pavelko%2C%20GP</text>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::SubTitle" x="171" y="160" w="244" h="-1" measuredW="85" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Doctors</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::IconLabel" x="297" y="202" w="-1" h="-1" measuredW="106" measuredH="63" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <text>Dr.%20Subramani%2C%20PT</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::IconLabel" x="430" y="202" w="-1" h="-1" measuredW="100" measuredH="63" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Dr.%20Friel%2C%20Surgeon</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::IconLabel" x="568" y="202" w="-1" h="-1" measuredW="113" measuredH="63" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Dr.%20Maruszak%2C%20DDO</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::HelpButton" x="225" y="202" w="-1" h="-1" measuredW="18" measuredH="18" zOrder="9" locked="false" isInGroup="-1"/>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Arrow" x="257" y="202" w="784" h="10" measuredW="150" measuredH="100" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>top</direction>
+        <rightArrow>false</rightArrow>
+        <stroke>dotted</stroke>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::StickyNote" x="1056" y="187" w="213" h="185" measuredW="109" measuredH="123" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Make%20this%20an%20exclamation%20point.%0ANotes%20that%20this%20is%20a%20new%20doctor%20that%20previously%20had%20not%20been%20visited.</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::IconLabel" x="161" y="280" w="-1" h="-1" measuredW="117" measuredH="63" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <text>Dr.%20Lippert%2C%20Surgeon</text>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::IconLabel" x="297" y="280" w="-1" h="-1" measuredW="136" measuredH="63" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <text>Dr.%20Hoberman%2C%20Surgeon</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::List" x="273" y="354" w="520" h="153" measuredW="100" measuredH="153" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Contact%20Information%3A%20%28123%29%20234-5433%0ALocation%28s%29%3A%20So%20and%20so%20hospital%20%28Map%20Link%29%20Hours%0A%09%20%20%20%20%20%20%20East%20Shore%20Office%20%28Map%20Link%29%20Hours%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20West%20Shore%20Office%20%28Map%20Link%29%20Hours%0ANext%20Appointment%3A%20Jun%2020%2C%202014%20%28link%20to%20Appointments%29%0ASpeciality%3A%20Surgeon%0AHistory%20%28link%20to%20History%20w/%20Filter%29</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
