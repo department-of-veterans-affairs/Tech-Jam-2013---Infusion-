@@ -61,6 +61,10 @@ body {
   margin: 0;
 }
 
+.panel-footer {
+  color: #3f2353;
+}
+
 /* Table Headers */
 
 table.tablesorter thead {
@@ -107,7 +111,7 @@ table.tablesorter thead tr th:hover {
 	height: 100%;
 	border-radius: 0;
 	border: none;
-	background-color: #222222;
+	background-color: #3f2353;
 	overflow-y: auto;
   }
 
