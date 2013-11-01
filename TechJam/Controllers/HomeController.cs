@@ -28,5 +28,33 @@ namespace TechJam.Controllers
 
             return View();
         }
+
+        public ActionResult History()
+        {
+            ViewBag.Message = "Your history page.";
+
+            return View();
+        }
+
+        public ActionResult Doctors()
+        {
+            ViewBag.Message = "Your history page.";
+
+            return View();
+        }
+
+        public ActionResult Appointments()
+        {
+            ViewBag.Message = "Your history page.";
+
+            return View();
+        }
+
+        public ActionResult GoalsAndInformation()
+        {
+            ViewBag.Message = "Your history page.";
+
+            return View();
+        }
     }
 }
