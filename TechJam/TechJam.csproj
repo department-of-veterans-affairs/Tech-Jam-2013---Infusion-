@@ -240,7 +240,9 @@
     <Content Include="Scripts\flot\jquery.flot.js" />
     <Content Include="Scripts\flot\jquery.flot.pie.js" />
     <Content Include="Scripts\flot\jquery.flot.resize.js" />
+    <Content Include="Scripts\flot\jquery.flot.time.js" />
     <Content Include="Scripts\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="Scripts\goals.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -305,6 +307,7 @@
     <Content Include="Views\Home\Goals.cshtml" />
     <Content Include="Views\Home\Documents.cshtml" />
     <Content Include="Views\Doctor\News.cshtml" />
+    <Content Include="Views\Doctor\PostNews.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

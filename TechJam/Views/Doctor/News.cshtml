@@ -1,19 +1,22 @@
 ﻿@{
-    ViewBag.Title = "Doctors";
+    ViewBag.Title = "Submit a news story";
 }
 <script>
     $('#nav-doctor').addClass('active');
 </script>
 <h2>Submit a News Article</h2>
 
-<form role="form">
+<form role="form" method="post" action="/Doctor/PostNews">
   <div class="form-group">
     <label for="exampleInputEmail1">News article link</label>
-    <input type="email" class="form-control" id="newsArticleInput" placeholder="Enter a news article link">
+    <input type="text" class="form-control" id="newsArticleInput" name="url" placeholder="Enter a news article link">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Comments for readers</label>
-    <input type="text" class="form-control" id="comments" placeholder="Enter comments for your readers">
+    <input type="text" class="form-control" id="comments" name="comments" placeholder="Enter comments for your readers">
+      <input type="hidden" class="form-control" id="hiddenTitle" name="title" >
+      <input type="hidden" class="form-control" id="hiddenDescription" name="description" >
+      <input type="hidden" class="form-control" id="hiddenThumbnail" name="thumbnail">
   </div>
     <h3 id="previewHeader"></h3>
 <div class="row">
@@ -21,7 +24,7 @@
     </div>
     <div class="col-md-6" style="margin-left: -30px">
         <b id="newsArticleTitle"></b><br />
-        <i id="newsArticleDesc"></i>
+        <p id="newsArticleDesc"></p>
     </div>
 </div>
   <br />
@@ -41,6 +44,10 @@
             $('#newsArticleTitle').append(data.title);
             $('#newsArticleDesc').empty();
             $('#newsArticleDesc').append(data.description);
+
+            $('#hiddenTitle').val(data.title);
+            $('#hiddenDescription').val(data.description);
+            $('#hiddenThumbnail').val(data.thumbnail);
         });
     });
 </script>

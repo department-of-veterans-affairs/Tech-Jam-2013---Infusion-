@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "News story submitted!";
+}
+<script>
+    $('#nav-doctor').addClass('active');
+</script>
+
+
+    <h3 id="previewHeader">News article submitted!</h3><br />
+<div class="row">
+    <div id="newsImageDiv" class="col-md-1" align="left">
+        <img src="@Request["thumbnail"]" class="img-rounded" />
+    </div>
+    <div class="col-md-6" style="margin-left: -30px">
+        <b id="newsArticleTitle"><a href="@Request["url"]">@Request["title"]</a></b><br />
+        <p id="newsArticleDesc">@Request["description"]</p>
+        <i><b>Your comments:</b><br />@Request["comments"]</i>
+    </div>
+</div>
