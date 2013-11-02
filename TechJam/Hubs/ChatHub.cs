@@ -4,9 +4,9 @@ namespace TechJam.Hubs
 {
     public class ChatHub : Hub
     {
-        public void SendOffer(string message)
+        public void Send(string message)
         {
-            Clients.Others.receiveOffer(message);
+            Clients.Others.newMessage(message);
         }
     }
 }
