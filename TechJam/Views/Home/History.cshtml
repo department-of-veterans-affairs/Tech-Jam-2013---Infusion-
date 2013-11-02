@@ -29,45 +29,50 @@
                 <div class="row">
                     <span data-bind="text: date"></span>
                 </div>
-                
                 <div class="row panel panel-default">
-                    
                     <div class="collapsible" id="section1">Vitals Recorded<span></span></div>
-                        <div class="container">
-                            <div class="content" data-bind="foreach: vitalsRecorded">
-                                <p><span data-bind="text: vital"></span>: 
-                                <span data-bind="text: measurement"></span></p>
-                            </div>
+                    <div class="container">
+                        <div class="content" data-bind="foreach: vitalsRecorded">
+                            <div><span data-bind="text: vital"></span>: 
+                                <span data-bind="text: measurement"></span></div>
                         </div>
+                    </div>
 
-                        <div class="collapsible" id="section2">Diagnosis<span></span></div>
-                        <div class="container">
-                            <div class="content">
-                                <span data-bind="text: diagnosis"></span>
-                            </div>
+                    <div class="collapsible" id="section2">Diagnosis<span></span></div>
+                    <div class="container">
+                        <div class="content">
+                            <span data-bind="text: diagnosis"></span>
                         </div>
+                    </div>
 
-                        <div class="collapsible" id="section3">Insurance Info<span></span></div>
-                        <div class="container">
-                            <div class="content">
-                                <span data-bind="text: insuranceInfo"></span>
-                            </div>
+                    <div class="collapsible" id="section3">Insurance Info<span></span></div>
+                    <div class="container">
+                        <div class="content">
+                            <span data-bind="text: insuranceInfo"></span>
                         </div>
+                    </div>
 
-                        <div class="collapsible" id="section4">Files<span></span></div>
-                        <div class="container">
-                            <div class="content">
-                                <span data-bind="text: files"></span>
-                            </div>
+                    <div class="collapsible" id="section4">Files<span></span></div>
+                    <div class="container">
+                        <div class="content">
+                            <span data-bind="text: files"></span>
                         </div>
-                    
+                    </div>
                 </div>
             </div>
             <hr />
         </div>
     </div>
+
     <div class="col-lg-3 text-center">
-        calendar here           
+        <div data-bind="foreach: dates">
+            <div class="collapsible-dates" data-bind="attr: {'id': 'myprefix_' + year}"><span data-bind="    text: year"></span><span></span></div>
+            <div class="container">
+                <div class="content" data-bind="foreach: months">
+                    <div data-bind="text: monthVisit"></div>
+                </div>
+            </div>
+        </div>     
     </div>
 </div>
 <script src="@Url.Content("~/Scripts/knockout-2.2.0.js")"></script>
