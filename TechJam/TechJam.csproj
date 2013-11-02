@@ -310,6 +310,13 @@
     <None Include="Properties\PublishProfiles\infjam - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Images\disease.jpg" />
+    <Content Include="Images\dr1.jpg" />
+    <Content Include="Images\dr2.jpg" />
+    <Content Include="Images\dr3.jpg" />
+    <Content Include="Images\dr4.jpg" />
+    <Content Include="Images\dr5.jpg" />
+    <Content Include="Images\dr6.jpg" />
+    <Content Include="Images\dr7.jpg" />
     <Content Include="Images\fitness.jpg" />
     <Content Include="Images\genetics.jpg" />
     <Content Include="Images\insurance.jpg" />
