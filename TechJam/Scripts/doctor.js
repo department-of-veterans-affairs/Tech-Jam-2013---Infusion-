@@ -7,7 +7,7 @@
             address: '330 Hudson st',
             specialty: 'Surgery',
             phoneNumber: '555-555-1234',
-            pictureUrl: 'http://nicenicejpg.com/220/220'
+            pictureUrl: 'http://nicenicejpg.com/200/220'
         },
         {
             id: 2,
@@ -15,15 +15,15 @@
             address: '1303 Yonge St, Toronto, Ontario',
             specialty: 'Internal Medecine',
             phoneNumber: '555-555-4321',
-            pictureUrl: 'http://fillmurray.com/220/220',
+            pictureUrl: 'http://fillmurray.com/200/220',
         },
         {
             id: 3,
             name: 'Matthew Pavelko',
-        address: '901 Stewart Avenue, #205, Garden City, NY‎ ',
-        specialty: 'Chief of Beef',
+            address: '901 Stewart Avenue, #205, Garden City, NY‎ ',
+            specialty: 'Chief of Beef',
             phoneNumber: '555-555-4321',
-            pictureUrl: 'http://placecage.com/220/220',
+            pictureUrl: 'http://placesheen.com/200/220',
         },
         {
             id: 4,
@@ -31,7 +31,7 @@
             address: '1303 Yonge St, Toronto, Ontario',
             specialty: 'Pediatrics',
             phoneNumber: '555-555-4321',
-            pictureUrl: 'http://placezombies.com/220x220',
+            pictureUrl: 'http://placezombies.com/200x220',
         },
         {
             id: 5,
@@ -39,7 +39,7 @@
             address: '1303 Yonge St, Toronto, Ontario',
             specialty: 'Internal Medecine',
             phoneNumber: '555-555-4321',
-            pictureUrl: 'http://placesheen.com/220/220',
+            pictureUrl: 'http://placesheen.com/200/220',
         },
         {
             id: 6,
@@ -47,7 +47,7 @@
             address: '1303 Yonge St, Toronto, Ontario',
             specialty: 'Internal Medecine',
             phoneNumber: '555-555-4321',
-            pictureUrl: 'http://nicenicejpg.com/220/220',
+            pictureUrl: 'http://nicenicejpg.com/200/220',
         },
         {
             id: 7,
@@ -55,7 +55,7 @@
             address: '1303 Yonge St, Toronto, Ontario',
             specialty: 'Internal Medecine',
             phoneNumber: '555-555-4321',
-            pictureUrl: 'http://nicenicejpg.com/220/220',
+            pictureUrl: 'http://nicenicejpg.com/200/220',
     }];
 
     function ViewModel() {
