@@ -226,12 +226,24 @@
 
     ko.applyBindings(vm);
     
+    function fixDiv() {
+        var $cache = $('#years');
+        if ($(window).scrollTop() > 90)
+            $cache.css({ 'position': 'fixed', 'top': '70px' });
+        else
+            $cache.css({ 'position': 'relative', 'top': 'auto' });
+    }
+    
+    $(window).scroll(fixDiv);
+    fixDiv();
+    
     $('.collapsible').collapsible({
+        speed: 200
     });
     
     $('.collapsible-dates').collapsible({
         cssClose: 'dateClosed',
         cssOpen: 'dateOpened',
-        speed: 200,
+        speed: 200
     });
 });
