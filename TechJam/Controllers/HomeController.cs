@@ -50,13 +50,6 @@ namespace TechJam.Controllers
             return View();
         }
 
-        public ActionResult Goals()
-        {
-            ViewBag.Message = "Your history page.";
-
-            return View();
-        }
-
         public ActionResult Documents()
         {
             ViewBag.Message = "Your history page.";

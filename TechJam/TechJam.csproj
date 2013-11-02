@@ -213,6 +213,7 @@
     <Compile Include="Controllers\AppointmentsController.cs" />
     <Compile Include="Controllers\ChatController.cs" />
     <Compile Include="Controllers\DoctorController.cs" />
+    <Compile Include="Controllers\GoalsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MongoController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
@@ -386,13 +387,13 @@
     <Content Include="Views\Home\History.cshtml" />
     <Content Include="Views\Doctor\Index.cshtml" />
     <Content Include="Views\Appointments\Index.cshtml" />
-    <Content Include="Views\Home\Goals.cshtml" />
     <Content Include="Views\Home\Documents.cshtml" />
     <Content Include="Views\Doctor\News.cshtml" />
     <Content Include="Views\Doctor\PostNews.cshtml" />
     <Content Include="Views\News\Index.cshtml" />
     <Content Include="Views\News\Select.cshtml" />
     <Content Include="Views\Chat\Index.cshtml" />
+    <Content Include="Views\Goals\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
