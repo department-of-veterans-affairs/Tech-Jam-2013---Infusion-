@@ -29,14 +29,14 @@
         connection.onaddstream = function (event) {
             // Create a new HTML5 Video element
             var newVideoElement = document.createElement('video');
-            newVideoElement.className = 'video';
+            newVideoElement.className = 'chat-video';
             newVideoElement.autoplay = 'autoplay';
 
             // Attach the stream to the Video element via adapter.js
             attachMediaStream(newVideoElement, event.stream);
 
             // Add the new Video element to the page
-            document.querySelector('body').appendChild(newVideoElement);
+            document.querySelector('#their-stream-host').appendChild(newVideoElement);
 
             // Turn off the call button, since we should be in a call now
             document.querySelector('#startBtn').setAttribute('disabled', 'disabled');
