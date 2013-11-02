@@ -7,7 +7,7 @@
             address: '330 Hudson st',
             specialty: 'Surgery',
             phoneNumber: '555-555-1234',
-            pictureUrl: 'http://nicenicejpg.com/200/220'
+            pictureUrl: '/images/dr1.jpg'
         },
         {
             id: 2,
@@ -15,7 +15,7 @@
             address: '1303 Yonge St, Toronto, Ontario',
             specialty: 'Internal Medecine',
             phoneNumber: '555-555-4321',
-            pictureUrl: 'http://fillmurray.com/200/220',
+            pictureUrl: '/images/dr2.jpg',
         },
         {
             id: 3,
@@ -23,7 +23,7 @@
             address: '901 Stewart Avenue, #205, Garden City, NY‎ ',
             specialty: 'Chief of Beef',
             phoneNumber: '555-555-4321',
-            pictureUrl: 'http://placesheen.com/200/220',
+            pictureUrl: '/images/dr3.jpg',
         },
         {
             id: 4,
@@ -31,7 +31,7 @@
             address: '1303 Yonge St, Toronto, Ontario',
             specialty: 'Pediatrics',
             phoneNumber: '555-555-4321',
-            pictureUrl: 'http://placezombies.com/200x220',
+            pictureUrl: '/images/dr4.jpg',
         },
         {
             id: 5,
@@ -39,7 +39,7 @@
             address: '1303 Yonge St, Toronto, Ontario',
             specialty: 'Internal Medecine',
             phoneNumber: '555-555-4321',
-            pictureUrl: 'http://placesheen.com/200/220',
+            pictureUrl: '/images/dr5.jpg',
         },
         {
             id: 6,
@@ -47,7 +47,7 @@
             address: '1303 Yonge St, Toronto, Ontario',
             specialty: 'Internal Medecine',
             phoneNumber: '555-555-4321',
-            pictureUrl: 'http://nicenicejpg.com/200/220',
+            pictureUrl: '/images/dr6.jpg',
         },
         {
             id: 7,
@@ -55,7 +55,7 @@
             address: '1303 Yonge St, Toronto, Ontario',
             specialty: 'Internal Medecine',
             phoneNumber: '555-555-4321',
-            pictureUrl: 'http://nicenicejpg.com/200/220',
+            pictureUrl: '/images/dr7.jpg',
     }];
 
     function ViewModel() {
