@@ -1,11 +1,11 @@
-﻿var final_transcript = '';
+var final_transcript = '';
 
 if (!('webkitSpeechRecognition' in window)) {
     // Do nothing to not piss off other devs ;)
 } else {
     var recognition = new webkitSpeechRecognition();
 
-    recognition.onresult = function(event) {
+    recognition.onresult = function (event) {
         var interim_transcript = '';
 
         for (var i = event.resultIndex; i < event.results.length; ++i) {
@@ -29,10 +29,10 @@ if (!('webkitSpeechRecognition' in window)) {
         if (final_transcript.indexOf("goal") >= 0 || final_transcript.indexOf("roll") >= 0) { window.location.href = "/Home/Goals"; }
         if (final_transcript.indexOf("documents") >= 0) { window.location.href = "/Home/Documents"; }
     };
-    }
+}
 
-        function startRecognition() {
-            final_transcript = '';
-            recognition.lang = 'en-US';
-            recognition.start();
-        }
+function startRecognition() {
+    final_transcript = '';
+    recognition.lang = 'en-US';
+    recognition.start();
+}
