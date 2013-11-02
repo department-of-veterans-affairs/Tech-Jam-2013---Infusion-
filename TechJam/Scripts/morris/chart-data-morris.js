@@ -47,6 +47,9 @@ Morris.Area({
   labels: ['Visits'],
   // Disables line smoothing
   smooth: false,
+
+  lineColors: ['#3f2353 '],
+  pointFillColors: ['#3f2353']
 });
 
 Morris.Donut({
@@ -57,7 +60,9 @@ Morris.Donut({
     {label: "Social", value: 12.8},
     {label: "Organic", value: 36.2}
   ],
-  formatter: function (y) { return y + "%" ;}
+  formatter: function (y) { return y + "%"; },
+backgroundColor: ['#302050 '],
+colors: ['#3f2353']
 });
 
 Morris.Line({
