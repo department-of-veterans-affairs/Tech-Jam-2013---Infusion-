@@ -26,6 +26,11 @@
     padding:10px;
 }
 
+.panel-success .panel-heading h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 .goal-chart {
     height: 300px;
 }
