@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
         @Scripts.Render("~/bundles/modernizr")
         @Scripts.Render("~/bundles/custom-form")
+        @Scripts.Render("~/bundles/speech")
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       <script src="@Url.Content("~/Scripts/jquery.collapsible.js")"></script>
     </head>
@@ -45,6 +46,9 @@
          </ul>
 
           <ul class="nav navbar-nav navbar-right navbar-user">
+            <li>
+                <a href="javascript:startRecognition();">Voice</a>
+            </li>
             <li class="dropdown messages-dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
               <ul class="dropdown-menu">
