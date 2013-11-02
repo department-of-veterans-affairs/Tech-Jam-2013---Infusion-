@@ -24,14 +24,31 @@
 </h1> 
 
 <div class="row" data-bind="foreach: appointments">
-    <div class="col-lg-2 col-sm-4">
-        <div class="thumbnail">
-            <span data-bind="text: date"></span><br/>
-            <span data-bind="text: time"></span><br/>
-            <span data-bind="text: doctor"></span><br/>
-            <span data-bind="text: type"></span><br/>
-            <span data-bind="text: phoneNumber"></span> <br/>
-            <a data-bind="attr: { href: address }" target="_blank">Map</a>
+    <div class="col-lg-3 col-sm-4">
+        <div class="panel panel-success thumbnail">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <i class="icon-check icon-3x"></i>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <h4><span data-bind="text: type"></span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <span data-bind="text: doctor"></span><br/>
+                        <span data-bind="text: phoneNumber"></span> <br/>
+                        <a data-bind="attr: { href: addressUrl }, text: address" target="_blank">Map</a>
+                    </div>
+                    <div class="col-xs-4">
+                        <span data-bind="text: date"></span><br/>
+                        <span data-bind="text: time"></span><br/>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

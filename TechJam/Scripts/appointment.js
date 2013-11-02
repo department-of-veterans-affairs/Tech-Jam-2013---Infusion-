@@ -92,6 +92,7 @@
         this.type = ko.observable();
         this.phoneNumber = ko.observable();
         this.address = ko.observable();
+        this.addressUrl = ko.observable();
     }
 
     var vm = new ViewModel();
@@ -103,7 +104,8 @@
         appointment.doctor(appointments[i].doctor);
         appointment.type(appointments[i].type);
         appointment.phoneNumber(appointments[i].phoneNumber);
-        appointment.address("http://maps.apple.com/?daddr=" + appointments[i].address.replace(" ", "+"));
+        appointment.address(appointments[i].address);
+        appointment.addressUrl("http://maps.apple.com/?daddr=" + appointments[i].address.replace(" ", "+"));
         vm.appointments.push(appointment);
     }
 
