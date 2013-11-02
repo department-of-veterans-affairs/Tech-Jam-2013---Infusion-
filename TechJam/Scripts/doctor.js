@@ -43,7 +43,7 @@
     },
     {
         id: 6,
-        name: 'Dr. Stephen Jakisa',
+        name: 'Chris Friel',
         address: '1303 Yonge St, Toronto, Ontario',
         specialty: 'Internal Medecine',
         phoneNumber: '555-555-4321',
@@ -51,7 +51,7 @@
     },
     {
         id: 7,
-        name: 'Dr. Stephen Jakisa',
+        name: 'Your Name Here',
         address: '1303 Yonge St, Toronto, Ontario',
         specialty: 'Internal Medecine',
         phoneNumber: '555-555-4321',
