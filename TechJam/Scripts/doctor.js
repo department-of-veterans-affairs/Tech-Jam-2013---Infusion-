@@ -20,8 +20,8 @@
     {
         id: 3,
         name: 'Matthew Pavelko',
-        address: '345, E 44th St, New York, NY',
-        specialty: 'Proctology',
+        address: '901 Stewart Avenue, #205, Garden City, NY‎ ',
+        specialty: 'Chief of Beef',
         phoneNumber: '555-555-4321',
         pictureUrl: 'http://placecage.com/220/220',
     },
