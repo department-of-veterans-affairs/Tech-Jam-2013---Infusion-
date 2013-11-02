@@ -285,6 +285,7 @@
     <Content Include="Images\technology.jpg" />
     <Content Include="Scripts\appointment.js" />
     <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\speech.js" />
     <Content Include="Scripts\history.js" />
     <Content Include="Scripts\doctor.js" />
     <Content Include="Scripts\flot\chart-data-flot.js" />
