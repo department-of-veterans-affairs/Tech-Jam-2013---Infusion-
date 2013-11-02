@@ -5,9 +5,37 @@
     $('#nav-goals').addClass('active');
 </script>
 <h1>Goals</h1>
-<h2 id="weight-goal">Weight</h2>
-Your goal weight: 178lbs
-<div id="weight-chart"/>
+<div class="row">
+    <div class="col-lg-12">
+        <h2 id="weight-goal">Weight</h2>
+        Your goal weight: 178lbs
+        <div id="weight-chart" class="goal-chart"></div>
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label class="sr-only" for="weight-input">Weight</label>
+                <input id="weight-input" placeholder="Enter new weight" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-success">Save</button>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <h2 id="blood-pressure">Blood Pressure</h2>
+        <div id="blood-pressure-chart" class="goal-chart"></div>
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label class="sr-only" for="systolic-input">Systolic</label>
+                <input id="systolic-input" placeholder="Systolic Pressure" class="form-control" />
+            </div>
+            <div class="form-group" role="form">
+                <label class="sr-only" for="diastolic-input">Diastolic</label>
+                <input id="diastolic-input" placeholder="Diastolic Pressure" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-success">Save</button>
+        </form>
+    </div>
+</div>
 <script src="@Url.Content("~/Scripts/flot/jquery.flot.js")"></script>
 <script src="@Url.Content("~/Scripts/flot/jquery.flot.time.js")"></script>
 <script src="@Url.Content("~/Scripts/goals.js")"></script>

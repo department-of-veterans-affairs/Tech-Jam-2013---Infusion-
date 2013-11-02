@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Latest News</h2>
+<br />
+@foreach (var news in ViewBag.News) {
+    <div class="row">
+        <div id="newsImageDiv" class="col-md-1" style="width:95px" align="left">
+            <img src="@news["thumbnail"]" class="img-rounded" />
+        </div>
+        <div class="col-md-6" style="margin-left: 0px">
+            <b id="newsArticleTitle"><a href="@news["url"]">@news["title"]</a></b><br />
+            <p id="newsArticleDesc">@news["description"]</p>
+            <i><b>Doctor's comments:</b><br />@news["comments"]</i>
+        </div>  
+    </div>
+    <div class='row'><div class='span12'><hr /></div></div>
+}
