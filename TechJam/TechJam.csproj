@@ -207,6 +207,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\SignalRStartup.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AppointmentsController.cs" />
@@ -219,6 +220,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Hubs\ChatHub.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -302,8 +304,10 @@
     <Content Include="Images\prevention.jpg" />
     <Content Include="Images\research.jpg" />
     <Content Include="Images\technology.jpg" />
+    <Content Include="Scripts\adapter.js" />
     <Content Include="Scripts\appointment.js" />
     <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\chat.js" />
     <Content Include="Scripts\history.js" />
     <Content Include="Scripts\doctor.js" />
     <Content Include="Scripts\flot\chart-data-flot.js" />
