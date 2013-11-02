@@ -55,6 +55,11 @@
         this.historyEntries = ko.observableArray();
         this.currentHistoryEntry = ko.observableArray();
         this.dates = new Array();
+        this.scrollToPosition = function(position) {
+            $('html, body').animate({
+                scrollTop: $('month_' + position).offset().top
+            }, 2000);
+        };
         this.showModal = function(historyEntry) {
             that.currentHistoryEntry(historyEntry);
             $('#history-entry-modal').modal();
@@ -73,7 +78,11 @@
         
         if (toAdd) {
             var monthsArray = new Array();
-            monthsArray.push({ monthVisit: month });
+            monthsArray.push({ monthVisit: month, scrollToPosition : function(position) {
+                $('html, body').animate({
+                    scrollTop: $('.month_' + position).offset().top
+                }, 2000);
+            } });
             dates.push({ year: year, months: monthsArray });
         } else {
             toAdd = true;

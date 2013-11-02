@@ -16,7 +16,7 @@
     </div>
     
     <div class="col-lg-9" data-bind="foreach: historyEntries">
-        <div class="row">
+        <div class="row" data-bind="attr: { class: 'month_' + month() + ' row' }">
             <div class="col-lg-2">
                 <div class="thumbnail">
                     <img data-bind="attr: { src: imgUrl, alt: name }" />
@@ -64,12 +64,12 @@
         </div>
     </div>
 
-    <div class="col-lg-3 text-center">
+    <div class="col-lg-3">
         <div data-bind="foreach: dates">
-            <div class="collapsible-dates" data-bind="attr: {'id': 'myprefix_' + year}"><span data-bind="    text: year"></span><span></span></div>
+            <div class="collapsible-dates" data-bind="attr: {'id': 'myprefix_' + year}"><span class="year" data-bind=" text: year"></span><span></span></div>
             <div class="container">
                 <div class="content" data-bind="foreach: months">
-                    <div data-bind="text: monthVisit"></div>
+                    <a data-bind="text: monthVisit, click: function (data, event) { debugger; this.scrollToPosition(monthVisit); }"></a><br/>
                 </div>
             </div>
         </div>     
