@@ -191,6 +191,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AppointmentsController.cs" />
+    <Compile Include="Controllers\ChatController.cs" />
     <Compile Include="Controllers\DoctorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MongoController.cs" />
@@ -285,6 +286,7 @@
     <Content Include="Images\technology.jpg" />
     <Content Include="Scripts\appointment.js" />
     <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\speech.js" />
     <Content Include="Scripts\history.js" />
     <Content Include="Scripts\doctor.js" />
     <Content Include="Scripts\flot\chart-data-flot.js" />
@@ -363,6 +365,7 @@
     <Content Include="Views\Doctor\PostNews.cshtml" />
     <Content Include="Views\News\Index.cshtml" />
     <Content Include="Views\News\Select.cshtml" />
+    <Content Include="Views\Chat\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -10,10 +10,11 @@
         <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Styles/css")
-      <link href="@Url.Content("~/Content/font-awesome/css/font-awesome.min.css")" rel="stylesheet"/>
+        <link href="@Url.Content("~/Content/font-awesome/css/font-awesome.min.css")" rel="stylesheet"/>
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
         @Scripts.Render("~/bundles/modernizr")
         @Scripts.Render("~/bundles/custom-form")
+        @Scripts.Render("~/bundles/speech")
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       <script src="@Url.Content("~/Scripts/jquery.collapsible.js")"></script>
     </head>
@@ -45,6 +46,10 @@
          </ul>
 
           <ul class="nav navbar-nav navbar-right navbar-user">
+            <li>
+                <a href="javascript:startRecognition();">Voice</a>
+            </li>
+              <li><a href="@Url.Action("Index", "Chat")"><i class="icon-phone"></i>Chat</a> </li>
             <li class="dropdown messages-dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
               <ul class="dropdown-menu">
