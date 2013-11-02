@@ -21,12 +21,12 @@
             insuranceInfo: 'something else ya',
             files: 'something?',
             title: 'General Appt',
-            imgUrl: 'http://nicenicejpg.com/170/220',
+            imgUrl: '/images/dr7.jpg',
             date: 'January 4, 2012',
             month: 'January',
             day: '4',
             year: '2012',
-            doctorId: '1'
+            doctorId: '7'
         },
         {
             id: 2,
@@ -44,12 +44,12 @@
             insuranceInfo: 'something else',
             files: 'something?',
             title: 'General Appt',
-            imgUrl: 'http://nicenicejpg.com/170/220',
+            imgUrl: '/images/dr1.jpg',
             date: 'February 21, 2013',
             month: 'February',
             day: '21',
             year: '2013',
-            doctorId: '2'
+            doctorId: '1'
         },
         {
             id: 3,
@@ -67,7 +67,7 @@
             insuranceInfo: 'something else',
             files: 'something?',
             title: 'General Appt',
-            imgUrl: 'http://nicenicejpg.com/170/220',
+            imgUrl: '/images/dr3.jpg',
             date: 'April 21, 2013',
             month: 'April',
             day: '21',
@@ -90,12 +90,12 @@
             insuranceInfo: 'something else',
             files: 'something?',
             title: 'General Appt',
-            imgUrl: 'http://nicenicejpg.com/170/220',
+            imgUrl: '/images/dr2.jpg',
             date: 'June 21, 2014',
             month: 'June',
             day: '21',
             year: '2014',
-            doctorId: '4'
+            doctorId: '2'
         },
         {
             id: 5,
@@ -113,7 +113,7 @@
             insuranceInfo: 'something else',
             files: 'something?',
             title: 'General Appt',
-            imgUrl: 'http://nicenicejpg.com/170/220',
+            imgUrl: '/images/dr5.jpg',
             date: 'September 21, 2014',
             month: 'September',
             day: '21',
@@ -199,11 +199,6 @@
         this.year = ko.observable();
         this.doctorId = ko.observable();
     }
-    
-    function vitalEntry() {
-        this.vital = ko.observable();
-        this.measurement = ko.observable();
-    }
 
     var vm = new ViewModel();
     for (var i = 0; i < historyEntries.length; i++) {
@@ -231,12 +226,24 @@
 
     ko.applyBindings(vm);
     
+    function fixDiv() {
+        var $cache = $('#years');
+        if ($(window).scrollTop() > 90)
+            $cache.css({ 'position': 'fixed', 'top': '70px' });
+        else
+            $cache.css({ 'position': 'relative', 'top': 'auto' });
+    }
+    
+    $(window).scroll(fixDiv);
+    fixDiv();
+    
     $('.collapsible').collapsible({
+        speed: 200
     });
     
     $('.collapsible-dates').collapsible({
         cssClose: 'dateClosed',
         cssOpen: 'dateOpened',
-        speed: 200,
+        speed: 200
     });
 });

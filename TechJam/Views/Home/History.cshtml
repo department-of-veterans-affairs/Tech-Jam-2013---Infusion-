@@ -73,7 +73,7 @@
     </div>
 
     <div class="col-lg-5">
-        <div data-bind="foreach: dates">
+        <div data-bind="foreach: dates" id="years">
             <div class="collapsible-dates" data-bind="attr: {'id': 'myprefix_' + year}"><strong class="year" data-bind=" text: year" style="font-size:28px"></strong><span style="margin-top: 1.4%"></span></div>
             <div class="container">
                 <div class="content" data-bind="foreach: months">

@@ -17,7 +17,7 @@
             doctor: 'Dr. House',
             type: 'Surgery',
             phoneNumber: '555-555-1234',
-            address: '599 Broadway, New York, New York'
+            address: '201 East 10th Street, New York, New York'
         },
         {
             id: 3,
@@ -26,7 +26,7 @@
             doctor: 'Dr. House',
             type: 'Surgery',
             phoneNumber: '555-555-1234',
-            address: '599 Broadway, New York, New York'
+            address: '201 East 10th Street, New York, New York'
         },
         {
             id: 4,
@@ -35,7 +35,7 @@
             doctor: 'Dr. House',
             type: 'Surgery',
             phoneNumber: '555-555-1234',
-            address: '599 Broadway, New York, New York'
+            address: '201 East 10th Street, New York, New York'
         },
         {
             id: 5,
@@ -44,7 +44,7 @@
             doctor: 'Dr. House',
             type: 'Surgery',
             phoneNumber: '555-555-1234',
-            address: '599 Broadway, New York, New York'
+            address: '201 East 10th Street, New York, New York'
         },
         {
             id: 6,
@@ -53,7 +53,7 @@
             doctor: 'Dr. House',
             type: 'Surgery',
             phoneNumber: '555-555-1234',
-            address: '599 Broadway, New York, New York'
+            address: '201 East 10th Street, New York, New York'
         },
         {
             id: 7,
@@ -62,7 +62,7 @@
             doctor: 'Dr. House',
             type: 'Surgery',
             phoneNumber: '555-555-1234',
-            address: '599 Broadway, New York, New York'
+            address: '201 East 10th Street, New York, New York'
         },
         {
             id: 8,
@@ -71,7 +71,7 @@
             doctor: 'Dr. House',
             type: 'Surgery',
             phoneNumber: '555-555-1234',
-            address: '599 Broadway, New York, New York'
+            address: '201 East 10th Street, New York, New York'
         }];
 
     function ViewModel() {
