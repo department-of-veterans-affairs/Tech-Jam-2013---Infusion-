@@ -17,48 +17,64 @@
     
     <div class="col-lg-7" data-bind="foreach: historyEntries">
         <div class="row" data-bind="attr: { class: 'month_' + month() + ' row' }">
-            <div class="col-lg-4 col-sm-5">
-                <div class="thumbnail">
-                    <a data-bind="attr: { href: '/Doctor/Index?doctorId=' + doctorId() }"><img data-bind="attr: { src: imgUrl, alt: name }"/></a>
-                    <div class="caption">
-                        <h3><a href="#" data-bind="text: title"></a></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-8 col-sm-7">
-                <div class="row">
-                    <span data-bind="text: date"></span>
-                </div>
-                <div class="row panel panel-default">
-                    <div class="collapsible" id="section1">Vitals Recorded<span></span></div>
-                    <div class="container">
-                        <div class="content" data-bind="foreach: vitalsRecorded">
-                            <div><span data-bind="text: vital"></span>: 
-                                <span data-bind="text: measurement"></span></div>
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h3 data-bind="text: title"></h3>
                         </div>
-                    </div>
-
-                    <div class="collapsible" id="section2">Diagnosis<span></span></div>
-                    <div class="container">
-                        <div class="content">
-                            <span data-bind="text: diagnosis"></span>
-                        </div>
-                    </div>
-
-                    <div class="collapsible" id="section3">Insurance Info<span></span></div>
-                    <div class="container">
-                        <div class="content">
-                            <span data-bind="text: insuranceInfo"></span>
-                        </div>
-                    </div>
-
-                    <div class="collapsible" id="section4">Files<span></span></div>
-                    <div class="container">
-                        <div class="content">
-                            <span data-bind="text: files"></span>
+                        <div class="col-xs-6 text-right">
+                            <h4  data-bind="text: date"></h4>
                         </div>
                     </div>
                 </div>
+                
+
+                <div class="col-lg-4 col-sm-5">
+                    <a data-bind="attr: { href: '/Doctor/Index?doctorId=' + doctorId() }"><img class="img-rounded" data-bind="attr: { src: imgUrl, alt: name }"/></a>
+                </div>
+                
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-lg-8 col-sm-7">
+                            <div class="row">
+                                <span data-bind="text: date"></span>
+                            </div>
+                            <div class="row panel panel-default">
+                                <div class="collapsible" id="section1">Vitals Recorded<span></span></div>
+                                <div class="container">
+                                    <div class="content" data-bind="foreach: vitalsRecorded">
+                                        <div><span data-bind="text: vital"></span>: 
+                                            <span data-bind="text: measurement"></span></div>
+                                    </div>
+                                </div>
+
+                                <div class="collapsible" id="section2">Diagnosis<span></span></div>
+                                <div class="container">
+                                    <div class="content">
+                                        <span data-bind="text: diagnosis"></span>
+                                    </div>
+                                </div>
+
+                                <div class="collapsible" id="section3">Insurance Info<span></span></div>
+                                <div class="container">
+                                    <div class="content">
+                                        <span data-bind="text: insuranceInfo"></span>
+                                    </div>
+                                </div>
+
+                                <div class="collapsible" id="section4">Files<span></span></div>
+                                <div class="container">
+                                    <div class="content">
+                                        <span data-bind="text: files"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
             </div>
             <hr />
         </div>
