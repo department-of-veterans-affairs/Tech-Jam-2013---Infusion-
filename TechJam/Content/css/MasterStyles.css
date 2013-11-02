@@ -68,3 +68,16 @@ a {
 #morris-chart-area {
    /* height: 150px;*/
 }
+
+.doctor-panel {
+    position: relative;
+}
+.doctor-notification {
+    position: absolute;
+    right: -5px;
+    top: -15px;
+    z-index: 99;
+}
+.doctor-link:hover {
+    color: #428bca;
+}

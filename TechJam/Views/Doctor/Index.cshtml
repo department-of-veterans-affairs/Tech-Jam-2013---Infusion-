@@ -9,9 +9,10 @@
 <div class="row" data-bind="foreach: doctors">
     <div class="col-lg-3 col-sm-6">
 
-        <a href="#" data-bind=" click: $parent.showModal, attr: { id: 'doctorId_' + id() }">
+        <a href="#" data-bind=" click: $parent.showModal, attr: { id: 'doctorId_' + id() }" class="doctor-link">
             <div class="panel panel-success">
-                <div class="panel-heading">
+                <i class="icon-star icon-3x doctor-notification" data-bind="visible: notification"></i>
+                <div class="panel-heading doctor-panel">
                     <div class="row">
                         <div class="col-lg-6">
                             <i class="icon-user-md icon-3x"></i>

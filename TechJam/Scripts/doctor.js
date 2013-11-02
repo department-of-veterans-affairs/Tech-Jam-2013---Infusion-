@@ -16,6 +16,7 @@
             specialty: 'Internal Medecine',
             phoneNumber: '555-555-4321',
             pictureUrl: '/images/dr2.jpg',
+            notification: true
         },
         {
             id: 3,
@@ -75,6 +76,7 @@
         this.specialty = ko.observable();
         this.pictureUrl = ko.observable();
         this.phoneNumber = ko.observable();
+        this.notification = ko.observable();
     }
 
     var vm = new ViewModel();
@@ -86,6 +88,7 @@
         doctor.specialty(doctors[i].specialty);
         doctor.pictureUrl(doctors[i].pictureUrl);
         doctor.phoneNumber(doctors[i].phoneNumber);
+        doctor.notification(doctors[i].notification);
         vm.doctors.push(doctor);
     }
 
