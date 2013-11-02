@@ -8,7 +8,7 @@
             doctor: 'Doogie Howser',
             type: 'Check Up',
             phoneNumber: '555-555-1234',
-            mapUrl: 'http://nicenicejpg.com/220/220'
+            address: '201 East 10th Street, New York, New York'
         },
         {
             id: 1,
@@ -17,7 +17,7 @@
             doctor: 'Dr. House',
             type: 'Surgery',
             phoneNumber: '555-555-1234',
-            mapUrl: 'http://nicenicejpg.com/220/220'
+            address: '599 Broadway, New York, New York'
         }];
 
     function ViewModel() {
@@ -37,7 +37,7 @@
         this.doctor = ko.observable();
         this.type = ko.observable();
         this.phoneNumber = ko.observable();
-        this.mapUrl = ko.observable();
+        this.address = ko.observable();
     }
 
     var vm = new ViewModel();
@@ -49,7 +49,7 @@
         appointment.doctor(appointments[i].doctor);
         appointment.type(appointments[i].type);
         appointment.phoneNumber(appointments[i].phoneNumber);
-        appointment.mapUrl(appointments[i].mapUrl);
+        appointment.address("http://maps.apple.com/?daddr=" + appointments[i].address.replace(" ", "+"));
         vm.appointments.push(appointment);
     }
 

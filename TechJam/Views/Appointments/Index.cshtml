@@ -26,11 +26,12 @@
 <div class="row" data-bind="foreach: appointments">
     <div class="col-lg-2">
         <div class="thumbnail">
-                <span data-bind="text: date"></span><br/>
-                <span data-bind="text: time"></span><br/>
-                <span data-bind="text: doctor"></span><br/>
-                <span data-bind="text: type"></span><br/>
-                <span data-bind="text: phoneNumber"></span>
+            <span data-bind="text: date"></span><br/>
+            <span data-bind="text: time"></span><br/>
+            <span data-bind="text: doctor"></span><br/>
+            <span data-bind="text: type"></span><br/>
+            <span data-bind="text: phoneNumber"></span> <br/>
+            <a data-bind="attr: { href: address }" target="_blank">Map</a>
         </div>
     </div>
 </div>
