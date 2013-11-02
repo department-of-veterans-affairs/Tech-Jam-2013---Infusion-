@@ -38,6 +38,12 @@
     width: 100px;
 }
 
+a {
+    color: #428bca;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #morris-chart-area {
    /* height: 150px;*/
 }

@@ -15,9 +15,9 @@
         <h1 class="page-header">Recent History</h1>
     </div>
     
-    <div class="col-lg-9" data-bind="foreach: historyEntries">
+    <div class="col-lg-7" data-bind="foreach: historyEntries">
         <div class="row" data-bind="attr: { class: 'month_' + month() + ' row' }">
-            <div class="col-lg-2">
+            <div class="col-lg-4 col-sm-5">
                 <div class="thumbnail">
                     <a data-bind="attr: { href: '/Doctor/Index?doctorId=' + doctorId() }"><img data-bind="attr: { src: imgUrl, alt: name }"/></a>
                     <div class="caption">
@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-10">
+            <div class="col-lg-8 col-sm-7">
                 <div class="row">
                     <span data-bind="text: date"></span>
                 </div>
@@ -64,7 +64,7 @@
         </div>
     </div>
 
-    <div class="col-lg-3">
+    <div class="col-lg-5">
         <div data-bind="foreach: dates">
             <div class="collapsible-dates" data-bind="attr: {'id': 'myprefix_' + year}"><span class="year" data-bind=" text: year"></span><span></span></div>
             <div class="container">
