@@ -306,6 +306,8 @@
     <Content Include="Images\research.jpg" />
     <Content Include="Images\technology.jpg" />
     <Content Include="Scripts\adapter.js" />
+    <Content Include="Images\minus.png" />
+    <Content Include="Images\plus.png" />
     <Content Include="Scripts\appointment.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\chat.js" />

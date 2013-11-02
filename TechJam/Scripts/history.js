@@ -22,7 +22,10 @@
             files: 'something?',
             title: 'General Appt',
             imgUrl: 'http://nicenicejpg.com/220/220',
-            date: 'January 4, 2014'
+            date: 'January 4, 2014',
+            month: 'January',
+            day: '4',
+            year: '2014'
         },
         {
             id: 2,
@@ -41,30 +44,73 @@
             files: 'something?',
             title: 'General Appt',
             imgUrl: 'http://nicenicejpg.com/220/220',
-            date: 'December 21, 2014'
+            date: 'December 21, 2014',
+            month: 'December',
+            day: '21',
+            year: '2014'
         }];
 
     function ViewModel() {
         var that = this;
         this.historyEntries = ko.observableArray();
         this.currentHistoryEntry = ko.observableArray();
+        this.dates = new Array();
         this.showModal = function(historyEntry) {
             that.currentHistoryEntry(historyEntry);
             $('#history-entry-modal').modal();
         };
+    }
+    
+    function AddDate(dates, year, month) {
+        var toAdd = true;
+        
+        for (var i = 0; i < dates.length; i++)
+        {
+            if (dates[i].year == year) {
+                toAdd = false;
+            }
+        }
+        
+        if (toAdd) {
+            var monthsArray = new Array();
+            monthsArray.push({ monthVisit: month });
+            dates.push({ year: year, months: monthsArray });
+        } else {
+            toAdd = true;
+            
+            for (i = 0; i < dates.length; i++) {
+                if (dates[i].year == year) {
+                    for (var j = 0; j < dates[i].months.length; j++)
+                    {
+                        if (dates[i].months[j] == month) {
+                            toAdd = false;
+                        }
+                    }
+
+                    if (toAdd) {
+                        dates[i].months.push({ monthVisit: month });
+                    }
+                }
+            }
+        }
+
+        return dates;
     }
 
     function HistoryEntry() {
         this.id = ko.observable();
         
         this.vitalsRecorded = new Array();
-        
+
         this.diagnosis = ko.observable();
         this.insuranceInfo = ko.observable();
         this.files = ko.observable();
         this.title = ko.observable();
         this.imgUrl = ko.observable();
         this.date = ko.observable();
+        this.month = ko.observable();
+        this.day = ko.observable();
+        this.year = ko.observable();
     }
     
     function vitalEntry() {
@@ -86,14 +132,23 @@
         historyEntry.title(historyEntries[i].title);
         historyEntry.imgUrl(historyEntries[i].imgUrl);
         historyEntry.date(historyEntries[i].date);
+        historyEntry.month(historyEntries[i].month);
+        historyEntry.day(historyEntries[i].day);
+        historyEntry.year(historyEntries[i].year);
         historyEntry.insuranceInfo(historyEntries[i].insuranceInfo);
         vm.historyEntries.push(historyEntry);
+
+        vm.dates = AddDate(vm.dates, historyEntries[i].year, historyEntries[i].month);
     }
 
     ko.applyBindings(vm);
     
     $('.collapsible').collapsible({
-        //defaultOpen: 'section1'
+    });
+    
+    $('.collapsible-dates').collapsible({
+        cssClose: 'dateClosed',
+        cssOpen: 'dateOpened'
     });
 
     var mapOptions = {
