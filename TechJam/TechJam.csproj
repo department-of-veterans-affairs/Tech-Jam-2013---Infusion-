@@ -312,6 +312,7 @@
     <Content Include="Scripts\appointment.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\chat.js" />
+    <Content Include="Scripts\morris-0.4.3.min.js" />
     <Content Include="Scripts\speech.js" />
     <Content Include="Scripts\history.js" />
     <Content Include="Scripts\doctor.js" />
@@ -394,6 +395,7 @@
     <Content Include="Views\News\Select.cshtml" />
     <Content Include="Views\Chat\Index.cshtml" />
     <Content Include="Views\Goals\Index.cshtml" />
+    <Content Include="Views\Goals\_GoalSetting.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
