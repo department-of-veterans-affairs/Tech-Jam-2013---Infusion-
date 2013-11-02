@@ -12,53 +12,7 @@
 <!-- /.row -->
 
 <div class="row">
-    <div class="col-lg-3">
-        <div class="panel panel-success">
-            <div class="panel-heading">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <i class="icon-comments icon-5x"></i>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                        <p class="announcement-heading">22</p>
-                        <p class="announcement-text">News Articles</p>
-                    </div>
-                </div>
-            </div>
-            <a href="#">
-                <div class="panel-footer">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            Mentions
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            something
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-6">
-                            Mentions
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            something
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="panel-footer announcement-bottom">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            Mentions
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <i class="icon-circle-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
+    
     <div class="col-lg-3">
         <div class="panel panel-success">
             <div class="panel-heading">
@@ -105,6 +59,51 @@
                         </div>
                     </div>
                 </div>
+                <div class="panel-footer announcement-bottom">
+                    <div class="row">
+                        <div class="col-xs-9">
+                            See more...
+                        </div>
+                        <div class="col-xs-3 text-right">
+                            <i class="icon-circle-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <i class="icon-comments icon-5x"></i>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p class="announcement-heading">22</p>
+                        <p class="announcement-text">News Articles</p>
+                    </div>
+                </div>
+            </div>
+            @foreach (var news in ViewBag.News) {
+            <a href="#">
+                <div class="panel-footer">
+                    <div class="row" style="margin-top:10px">
+                        <div class="col-xs-4">
+                            <img src="@news["thumbnail"]" class="img-rounded" />
+                        </div>
+                        <div class="col-xs-8 text-right">
+                            <i><b>Doctor's comments:</b><br />@news["comments"]</i>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 10px">
+                        <div class="col-xs-12">
+                            <b id="newsArticleTitle"><a href="@news["url"]">@news["title"]</a></b><br />
+            <p id="newsArticleDesc">@news["description"]</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            }
                 <div class="panel-footer announcement-bottom">
                     <div class="row">
                         <div class="col-xs-9">
