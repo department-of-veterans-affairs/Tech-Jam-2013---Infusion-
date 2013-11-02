@@ -5,119 +5,127 @@
             id: 1,
             vitalsRecorded: [
                 {
-                    vital: 'heartrate',
-                    measurement: '24'
+                    vital: 'Heartrate',
+                    measurement: '70bpm'
                 },
                 {
-                    vital: 'blood pressure',
-                    measurement: 'nine'
+                    vital: 'Blood Pressure',
+                    measurement: '117 over 76'
                 },
                 {
-                    vital: 'weight',
+                    vital: 'Weight',
                     measurement: '180lb'
                 }
             ],
-            diagnosis: 'good',
-            insuranceInfo: 'something else ya',
-            files: 'something?',
+            diagnosis: 'Good',
+            insuranceInfo: 'Partial Coverage',
+            files: 'Prescription History',
             title: 'General Appt',
             imgUrl: '/images/dr7.jpg',
-            date: 'January 4, 2012',
+            date: 'January 4, 2010',
             month: 'January',
             day: '4',
-            year: '2012',
+            year: '2010',
             doctorId: '7'
         },
         {
             id: 2,
             vitalsRecorded: [
                 {
-                    vital: 'heartrate',
-                    measurement: 'up'
+                    vital: 'Heartrate',
+                    measurement: '80bpm'
                 },
                 {
-                    vital: 'weight',
+                    vital: 'Weight',
                     measurement: '200lb'
                 }
             ],
-            diagnosis: 'also good',
-            insuranceInfo: 'something else',
-            files: 'something?',
+            diagnosis: 'Good',
+            insuranceInfo: 'Full Coverage',
+            files: 'Prescription History',
             title: 'General Appt',
             imgUrl: '/images/dr1.jpg',
-            date: 'February 21, 2013',
+            date: 'February 21, 2011',
             month: 'February',
             day: '21',
-            year: '2013',
+            year: '2011',
             doctorId: '1'
         },
         {
             id: 3,
             vitalsRecorded: [
                 {
-                    vital: 'heartrate',
-                    measurement: 'up'
+                    vital: 'Heartrate',
+                    measurement: '70bpm'
                 },
                 {
-                    vital: 'weight',
-                    measurement: '200lb'
+                    vital: 'Blood Pressure',
+                    measurement: '117 over 76'
+                },
+                {
+                    vital: 'Weight',
+                    measurement: '180lb'
                 }
             ],
-            diagnosis: 'also good',
-            insuranceInfo: 'something else',
-            files: 'something?',
+            diagnosis: 'Great',
+            insuranceInfo: 'Partial Coverage',
+            files: 'Medical History',
             title: 'General Appt',
             imgUrl: '/images/dr3.jpg',
-            date: 'April 21, 2013',
+            date: 'April 21, 2012',
             month: 'April',
             day: '21',
-            year: '2013',
+            year: '2012',
             doctorId: '3'
         },
         {
             id: 4,
             vitalsRecorded: [
                 {
-                    vital: 'heartrate',
-                    measurement: 'up'
+                    vital: 'Heartrate',
+                    measurement: '80bpm'
                 },
                 {
-                    vital: 'weight',
+                    vital: 'Weight',
                     measurement: '200lb'
                 }
             ],
-            diagnosis: 'also good',
-            insuranceInfo: 'something else',
-            files: 'something?',
+            diagnosis: 'Good',
+            insuranceInfo: 'Full Coverage',
+            files: 'Prescription History',
             title: 'General Appt',
             imgUrl: '/images/dr2.jpg',
-            date: 'June 21, 2014',
+            date: 'June 21, 2013',
             month: 'June',
             day: '21',
-            year: '2014',
+            year: '2013',
             doctorId: '2'
         },
         {
             id: 5,
             vitalsRecorded: [
                 {
-                    vital: 'heartrate',
-                    measurement: 'up'
+                    vital: 'Heartrate',
+                    measurement: '70bpm'
                 },
                 {
-                    vital: 'weight',
-                    measurement: '200lb'
+                    vital: 'Blood Pressure',
+                    measurement: '117 over 76'
+                },
+                {
+                    vital: 'Weight',
+                    measurement: '180lb'
                 }
             ],
-            diagnosis: 'also good',
-            insuranceInfo: 'something else',
-            files: 'something?',
+            diagnosis: 'Great',
+            insuranceInfo: 'Partial Coverage',
+            files: 'Surgery History',
             title: 'General Appt',
             imgUrl: '/images/dr5.jpg',
-            date: 'September 21, 2014',
+            date: 'September 21, 2013',
             month: 'September',
             day: '21',
-            year: '2014',
+            year: '2013',
             doctorId: '5'
         }];
 
