@@ -12,8 +12,8 @@
     <CssShowBrowserTooltip>True</CssShowBrowserTooltip>
     <CssShowUnsupported>True</CssShowUnsupported>
     <CssSyncVendorValues>True</CssSyncVendorValues>
-    <HtmlEnableMustache>True</HtmlEnableMustache>
-    <HtmlEnableZenCoding>True</HtmlEnableZenCoding>
+    <HtmlEnableMustache>true</HtmlEnableMustache>
+    <HtmlEnableZenCoding>true</HtmlEnableZenCoding>
     <JavaScriptAutoCloseBraces>True</JavaScriptAutoCloseBraces>
     <JavaScriptEnableMinification>True</JavaScriptEnableMinification>
     <JavascriptEnableRegions>True</JavascriptEnableRegions>
@@ -34,11 +34,13 @@
     <JsHint_smarttabs>True</JsHint_smarttabs>
     <JsHintEnable>True</JsHintEnable>
     <JsHintErrorLocation>2</JsHintErrorLocation>
-    <LessCompileOnBuild>true</LessCompileOnBuild>
-    <LessCompileToFolder>true</LessCompileToFolder>
+    <KeepImportantComments>false</KeepImportantComments>
+    <LessCompileOnBuild>false</LessCompileOnBuild>
+    <LessCompileToFolder>false</LessCompileToFolder>
     <LessGenerateCssFile>true</LessGenerateCssFile>
     <LessMinify>true</LessMinify>
     <LessShowPreviewWindow>true</LessShowPreviewWindow>
+    <MarkdownMargin_width>505</MarkdownMargin_width>
     <ScssGenerateCssFile>True</ScssGenerateCssFile>
     <ScssMinify>True</ScssMinify>
     <ScssShowPreviewWindow>True</ScssShowPreviewWindow>
