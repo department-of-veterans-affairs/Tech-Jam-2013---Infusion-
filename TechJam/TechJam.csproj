@@ -312,6 +312,7 @@
     <Content Include="Scripts\appointment.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\chat.js" />
+    <Content Include="Scripts\morris-0.4.3.min.js" />
     <Content Include="Scripts\speech.js" />
     <Content Include="Scripts\history.js" />
     <Content Include="Scripts\doctor.js" />
