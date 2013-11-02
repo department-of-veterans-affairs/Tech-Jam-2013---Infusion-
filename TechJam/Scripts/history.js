@@ -17,16 +17,16 @@
                     measurement: '180lb'
                 }
             ],
-            diagnosis: 'Good',
+            diagnosis: 'Great',
             insuranceInfo: 'Partial Coverage',
-            files: 'Prescription History',
+            files: 'Surgery History',
             title: 'General Appt',
-            imgUrl: '/images/dr7.jpg',
-            date: 'January 4, 2010',
-            month: 'January',
-            day: '4',
-            year: '2010',
-            doctorId: '7'
+            imgUrl: '/images/dr5.jpg',
+            date: 'September 21, 2013',
+            month: 'September',
+            day: '21',
+            year: '2013',
+            doctorId: '5'
         },
         {
             id: 2,
@@ -44,12 +44,12 @@
             insuranceInfo: 'Full Coverage',
             files: 'Prescription History',
             title: 'General Appt',
-            imgUrl: '/images/dr1.jpg',
-            date: 'February 21, 2011',
-            month: 'February',
+            imgUrl: '/images/dr2.jpg',
+            date: 'June 21, 2013',
+            month: 'June',
             day: '21',
-            year: '2011',
-            doctorId: '1'
+            year: '2013',
+            doctorId: '2'
         },
         {
             id: 3,
@@ -94,12 +94,12 @@
             insuranceInfo: 'Full Coverage',
             files: 'Prescription History',
             title: 'General Appt',
-            imgUrl: '/images/dr2.jpg',
-            date: 'June 21, 2013',
-            month: 'June',
+            imgUrl: '/images/dr1.jpg',
+            date: 'February 21, 2011',
+            month: 'February',
             day: '21',
-            year: '2013',
-            doctorId: '2'
+            year: '2011',
+            doctorId: '1'
         },
         {
             id: 5,
@@ -117,17 +117,18 @@
                     measurement: '180lb'
                 }
             ],
-            diagnosis: 'Great',
+            diagnosis: 'Good',
             insuranceInfo: 'Partial Coverage',
-            files: 'Surgery History',
+            files: 'Prescription History',
             title: 'General Appt',
-            imgUrl: '/images/dr5.jpg',
-            date: 'September 21, 2013',
-            month: 'September',
-            day: '21',
-            year: '2013',
-            doctorId: '5'
-        }];
+            imgUrl: '/images/dr7.jpg',
+            date: 'January 4, 2010',
+            month: 'January',
+            day: '4',
+            year: '2010',
+            doctorId: '7'
+        }
+        ];
 
     function ViewModel() {
         var that = this;
