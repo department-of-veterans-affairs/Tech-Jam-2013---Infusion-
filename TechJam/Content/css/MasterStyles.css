@@ -2,3 +2,11 @@
 .goal-chart {
     height: 300px;
 }
+
+.logo-image {
+    width: 100px;
+}
+
+#morris-chart-area{
+    height: 150px;  
+}

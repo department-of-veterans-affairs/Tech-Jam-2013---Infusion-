@@ -277,6 +277,7 @@
     <Content Include="Images\fitness.jpg" />
     <Content Include="Images\genetics.jpg" />
     <Content Include="Images\insurance.jpg" />
+    <Content Include="Images\nightingale-logo.png" />
     <Content Include="Images\nutrition.jpg" />
     <Content Include="Images\politics.jpg" />
     <Content Include="Images\prevention.jpg" />
