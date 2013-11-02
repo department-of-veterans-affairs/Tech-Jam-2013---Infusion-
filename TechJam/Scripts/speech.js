@@ -22,7 +22,7 @@ if (!('webkitSpeechRecognition' in window)) {
 
     recognition.onend = function () {
         if (final_transcript == "") { alert("Could not understand you!"); }
-        if (final_transcript.indexOf("news") >= 0) { window.location.href = "/News/Index"; }
+        if (final_transcript.indexOf("news") >= 0) { window.location.href = "/News/Select"; }
         if (final_transcript.indexOf("history") >= 0) { window.location.href = "/Home/History"; }
         if (final_transcript.indexOf("doctor") >= 0) { window.location.href = "/Doctor"; }
         if (final_transcript.indexOf("appointment") >= 0) { window.location.href = "/Appointments"; }
