@@ -394,6 +394,7 @@
     <Content Include="Views\News\Select.cshtml" />
     <Content Include="Views\Chat\Index.cshtml" />
     <Content Include="Views\Goals\Index.cshtml" />
+    <Content Include="Views\Goals\_GoalSetting.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,4 +1,4 @@
-﻿$(function() {
+﻿$(function () {
 
     var doctors = [
         {
@@ -15,14 +15,54 @@
             address: '1303 Yonge St, Toronto, Ontario',
             specialty: 'Internal Medecine',
             phoneNumber: '555-555-4321',
-            pictureUrl: 'http://nicenicejpg.com/220/220',
-        }];
+            pictureUrl: 'http://fillmurray.com/220/220',
+        },
+    {
+        id: 3,
+        name: 'Matthew Pavelko',
+        address: '345, E 44th St, New York, NY',
+        specialty: 'Proctology',
+        phoneNumber: '555-555-4321',
+        pictureUrl: 'http://placecage.com/220/220',
+    },
+    {
+        id: 4,
+        name: 'Noah Santorello',
+        address: '1303 Yonge St, Toronto, Ontario',
+        specialty: 'Pediatrics',
+        phoneNumber: '555-555-4321',
+        pictureUrl: 'http://placezombies.com/220x220',
+    },
+    {
+        id: 5,
+        name: 'Geoffrey MacNeil',
+        address: '1303 Yonge St, Toronto, Ontario',
+        specialty: 'Internal Medecine',
+        phoneNumber: '555-555-4321',
+        pictureUrl: 'http://placesheen.com/220/220',
+    },
+    {
+        id: 6,
+        name: 'Dr. Stephen Jakisa',
+        address: '1303 Yonge St, Toronto, Ontario',
+        specialty: 'Internal Medecine',
+        phoneNumber: '555-555-4321',
+        pictureUrl: 'http://nicenicejpg.com/220/220',
+    },
+    {
+        id: 7,
+        name: 'Dr. Stephen Jakisa',
+        address: '1303 Yonge St, Toronto, Ontario',
+        specialty: 'Internal Medecine',
+        phoneNumber: '555-555-4321',
+        pictureUrl: 'http://nicenicejpg.com/220/220',
+    }];
 
     function ViewModel() {
         var that = this;
         this.doctors = ko.observableArray();
         this.currentDoctor = ko.observableArray();
-        this.showModal = function(doctor) {
+        this.showModal = function (doctor) {
             that.currentDoctor(doctor);
             $('#doctor-modal').modal();
         };

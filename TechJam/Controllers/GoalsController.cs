@@ -16,5 +16,10 @@ namespace TechJam.Controllers
             return View();
         }
 
+        public PartialViewResult GoalSetting()
+        {
+            return PartialView("_GoalSetting");
+        }
+
     }
 }
