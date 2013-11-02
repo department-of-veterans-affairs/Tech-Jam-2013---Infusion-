@@ -1,6 +1,5 @@
 ﻿@{
-    ViewBag.Title = "history";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "History";
 }
 <script>
     $('#nav-history').addClass('active');
@@ -10,13 +9,14 @@
     });
 </script>
 
-<div class="row">
     <div class="row">
-        <h1 class="page-header">Recent History</h1>
+        <div class="col-lg-12">
+            <h1>Appointment History</h1>
+        </div>
     </div>
     
     <div class="col-lg-7" data-bind="foreach: historyEntries">
-        <div class="row" data-bind="attr: { class: 'month_' + month() + ' row' }">
+        <div class="row"  data-bind="attr: { class: 'month_' + month() + ' row historyEntry' }">
             <div class="panel panel-success">
                 <div class="panel-heading">
                     <div class="row">
@@ -28,20 +28,15 @@
                         </div>
                     </div>
                 </div>
-                
-
-                <div class="col-lg-4 col-sm-5">
+                <div class="col-lg-4 col-sm-5" style="padding-top: 10px">
                     <a data-bind="attr: { href: '/Doctor/Index?doctorId=' + doctorId() }"><img class="img-rounded" data-bind="attr: { src: imgUrl, alt: name }"/></a>
                 </div>
                 
                 <div class="panel-footer">
                     <div class="row">
                         <div class="col-lg-8 col-sm-7">
-                            <div class="row">
-                                <span data-bind="text: date"></span>
-                            </div>
                             <div class="row panel panel-default">
-                                <div class="collapsible" id="section1">Vitals Recorded<span></span></div>
+                                <div class="collapsible" id="section1"><strong>Recorded</strong><span></span></div>
                                 <div class="container">
                                     <div class="content" data-bind="foreach: vitalsRecorded">
                                         <div><span data-bind="text: vital"></span>: 
@@ -49,21 +44,21 @@
                                     </div>
                                 </div>
 
-                                <div class="collapsible" id="section2">Diagnosis<span></span></div>
+                                <div class="collapsible" id="section2"><strong>Diagnosis</strong><span></span></div>
                                 <div class="container">
                                     <div class="content">
                                         <span data-bind="text: diagnosis"></span>
                                     </div>
                                 </div>
 
-                                <div class="collapsible" id="section3">Insurance Info<span></span></div>
+                                <div class="collapsible" id="section3"><strong>Insurance Info</strong><span></span></div>
                                 <div class="container">
                                     <div class="content">
                                         <span data-bind="text: insuranceInfo"></span>
                                     </div>
                                 </div>
 
-                                <div class="collapsible" id="section4">Files<span></span></div>
+                                <div class="collapsible" id="section4"><strong>Files</strong><span></span></div>
                                 <div class="container">
                                     <div class="content">
                                         <span data-bind="text: files"></span>
@@ -73,24 +68,21 @@
                         </div>
                     </div>
                 </div>
-                
-
             </div>
-            <hr />
         </div>
     </div>
 
     <div class="col-lg-5">
         <div data-bind="foreach: dates">
-            <div class="collapsible-dates" data-bind="attr: {'id': 'myprefix_' + year}"><span class="year" data-bind=" text: year"></span><span></span></div>
+            <div class="collapsible-dates" data-bind="attr: {'id': 'myprefix_' + year}"><strong class="year" data-bind=" text: year" style="font-size:28px"></strong><span style="margin-top: 1.4%"></span></div>
             <div class="container">
                 <div class="content" data-bind="foreach: months">
-                    <a data-bind="text: monthVisit, click: function (data, event) { debugger; this.scrollToPosition(monthVisit); }"></a><br/>
+                    <a style="margin-left: 15px" data-bind="text: monthVisit, click: function (data, event) { debugger; this.scrollToPosition(monthVisit); }"></a><br/>
                 </div>
             </div>
         </div>     
     </div>
-</div>
+
 <script src="@Url.Content("~/Scripts/knockout-2.2.0.js")"></script>
 <script src="@Url.Content("~/Scripts/knockout.mapping-latest.js")"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8b1xMywEqKNmqD9-CF-U_tZCWxdj6hLg&sensor=false"></script>

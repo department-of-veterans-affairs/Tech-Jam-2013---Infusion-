@@ -43,6 +43,22 @@
     width: 100px;
 }
 
+.historyEntry .panel {
+    margin-right: 0px;
+}
+
+.historyEntry .collapsible {
+    cursor: pointer;
+}
+
+.collapsible-dates {
+    cursor: pointer;
+}
+
+.appointment .thumbnail {
+    padding: 0;
+}
+
 a {
     color: #428bca;
     text-decoration: none;

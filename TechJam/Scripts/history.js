@@ -22,10 +22,10 @@
             files: 'something?',
             title: 'General Appt',
             imgUrl: 'http://nicenicejpg.com/170/220',
-            date: 'January 4, 2014',
+            date: 'January 4, 2012',
             month: 'January',
             day: '4',
-            year: '2014',
+            year: '2012',
             doctorId: '1'
         },
         {
@@ -45,11 +45,80 @@
             files: 'something?',
             title: 'General Appt',
             imgUrl: 'http://nicenicejpg.com/170/220',
-            date: 'December 21, 2014',
-            month: 'December',
+            date: 'February 21, 2013',
+            month: 'February',
+            day: '21',
+            year: '2013',
+            doctorId: '2'
+        },
+        {
+            id: 3,
+            vitalsRecorded: [
+                {
+                    vital: 'heartrate',
+                    measurement: 'up'
+                },
+                {
+                    vital: 'weight',
+                    measurement: '200lb'
+                }
+            ],
+            diagnosis: 'also good',
+            insuranceInfo: 'something else',
+            files: 'something?',
+            title: 'General Appt',
+            imgUrl: 'http://nicenicejpg.com/170/220',
+            date: 'April 21, 2013',
+            month: 'April',
+            day: '21',
+            year: '2013',
+            doctorId: '3'
+        },
+        {
+            id: 4,
+            vitalsRecorded: [
+                {
+                    vital: 'heartrate',
+                    measurement: 'up'
+                },
+                {
+                    vital: 'weight',
+                    measurement: '200lb'
+                }
+            ],
+            diagnosis: 'also good',
+            insuranceInfo: 'something else',
+            files: 'something?',
+            title: 'General Appt',
+            imgUrl: 'http://nicenicejpg.com/170/220',
+            date: 'June 21, 2014',
+            month: 'June',
             day: '21',
             year: '2014',
-            doctorId: '2'
+            doctorId: '4'
+        },
+        {
+            id: 5,
+            vitalsRecorded: [
+                {
+                    vital: 'heartrate',
+                    measurement: 'up'
+                },
+                {
+                    vital: 'weight',
+                    measurement: '200lb'
+                }
+            ],
+            diagnosis: 'also good',
+            insuranceInfo: 'something else',
+            files: 'something?',
+            title: 'General Appt',
+            imgUrl: 'http://nicenicejpg.com/170/220',
+            date: 'September 21, 2014',
+            month: 'September',
+            day: '21',
+            year: '2014',
+            doctorId: '5'
         }];
 
     function ViewModel() {
@@ -83,7 +152,7 @@
             monthsArray.push({ monthVisit: month, scrollToPosition : function(position) {
                 $('html, body').animate({
                     scrollTop: $('.month_' + position).offset().top
-                }, 2000);
+                }, 500);
             } });
             dates.push({ year: year, months: monthsArray });
         } else {
@@ -99,7 +168,13 @@
                     }
 
                     if (toAdd) {
-                        dates[i].months.push({ monthVisit: month });
+                        dates[i].months.push({
+                            monthVisit: month, scrollToPosition: function (position) {
+                                $('html, body').animate({
+                                    scrollTop: $('.month_' + position).offset().top - 65
+                                }, 500);
+                            }
+                        });
                     }
                 }
             }
@@ -161,6 +236,7 @@
     
     $('.collapsible-dates').collapsible({
         cssClose: 'dateClosed',
-        cssOpen: 'dateOpened'
+        cssOpen: 'dateOpened',
+        speed: 200,
     });
 });
