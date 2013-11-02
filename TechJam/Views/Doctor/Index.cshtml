@@ -8,51 +8,64 @@
 
 <div class="row" data-bind="foreach: doctors">
     <div class="col-lg-3 col-sm-6">
-        <div class="thumbnail">
-            <a href="#" data-bind=" click: $parent.showModal"><img data-bind="attr: { src: pictureUrl, alt: name }" /></a>
-            <div class="caption">
-                <h3><a href="#" data-bind="text: name, click: $parent.showModal, attr: { id: 'doctorId_' + id() }"></a></h3>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="doctor-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" data-bind="text: currentDoctor().name" id="myModalLabel"></h4>
-            </div>
-            <div class="modal-body">
-                <div>
-                    <div class="center-block" id="map-host" style="height: 300px; width: 300px;"></div>
+
+        <a href="#" data-bind=" click: $parent.showModal, attr: { id: 'doctorId_' + id() }">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <i class="icon-user-md icon-3x"></i>
+                        </div>
+                        <div class="col-lg-6 text-right">
+                            <h4 class="panel-title"><span data-bind="text: name"></span></h4>
+                        </div>
+                    </div>
+
                 </div>
-                <table class="table">
-                    <tr>
-                        <td class="text-right"><strong>Phone</strong></td>
-                        <td><span data-bind="text: currentDoctor().phoneNumber"></span></td>
-                    </tr>
-                    <tr>
-                        <td class="text-right"><strong>Address</strong></td>
-                        <td><span data-bind="text: currentDoctor().address"></span></td>
-                    </tr>
-                    <tr>
-                        <td class="text-right"><strong>Specialty</strong></td>
-                        <td><span data-bind="text: currentDoctor().specialty"></span></td>
-                    </tr>
-                </table>
+                <div class="panel-footer text-center">
+                    <img data-bind="attr: { src: pictureUrl, alt: name }" />
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-        <!-- /.modal-content -->
+        </a>
     </div>
-    <!-- /.modal-dialog -->
 </div>
-<!-- /.modal -->
-<script src="@Url.Content("~/Scripts/knockout-2.2.0.js")"></script>
-<script src="@Url.Content("~/Scripts/knockout.mapping-latest.js")"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8b1xMywEqKNmqD9-CF-U_tZCWxdj6hLg&sensor=false"></script>
-<script src="@Url.Content("~/Scripts/doctor.js")"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="doctor-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" data-bind="text: currentDoctor().name" id="myModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="center-block" id="map-host" style="height: 300px; width: 300px;"></div>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td class="text-right"><strong>Phone</strong></td>
+                            <td><span data-bind="text: currentDoctor().phoneNumber"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><strong>Address</strong></td>
+                            <td><span data-bind="text: currentDoctor().address"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><strong>Specialty</strong></td>
+                            <td><span data-bind="text: currentDoctor().specialty"></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="@Url.Content("~/Scripts/knockout-2.2.0.js")"></script>
+    <script src="@Url.Content("~/Scripts/knockout.mapping-latest.js")"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8b1xMywEqKNmqD9-CF-U_tZCWxdj6hLg&sensor=false"></script>
+    <script src="@Url.Content("~/Scripts/doctor.js")"></script>
