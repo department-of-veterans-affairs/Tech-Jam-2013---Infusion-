@@ -25,7 +25,8 @@
             date: 'January 4, 2014',
             month: 'January',
             day: '4',
-            year: '2014'
+            year: '2014',
+            doctorId: '1'
         },
         {
             id: 2,
@@ -47,7 +48,8 @@
             date: 'December 21, 2014',
             month: 'December',
             day: '21',
-            year: '2014'
+            year: '2014',
+            doctorId: '2'
         }];
 
     function ViewModel() {
@@ -120,6 +122,7 @@
         this.month = ko.observable();
         this.day = ko.observable();
         this.year = ko.observable();
+        this.doctorId = ko.observable();
     }
     
     function vitalEntry() {
@@ -145,6 +148,7 @@
         historyEntry.day(historyEntries[i].day);
         historyEntry.year(historyEntries[i].year);
         historyEntry.insuranceInfo(historyEntries[i].insuranceInfo);
+        historyEntry.doctorId(historyEntries[i].doctorId);
         vm.historyEntries.push(historyEntry);
 
         vm.dates = AddDate(vm.dates, historyEntries[i].year, historyEntries[i].month);

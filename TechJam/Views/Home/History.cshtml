@@ -19,7 +19,7 @@
         <div class="row" data-bind="attr: { class: 'month_' + month() + ' row' }">
             <div class="col-lg-2">
                 <div class="thumbnail">
-                    <img data-bind="attr: { src: imgUrl, alt: name }" />
+                    <a data-bind="attr: { href: '/Doctor/Index#id=' + doctorId() }"><img data-bind="attr: { src: imgUrl, alt: name }" /></a>
                     <div class="caption">
                         <h3><a href="#" data-bind="text: title"></a></h3>
                     </div>

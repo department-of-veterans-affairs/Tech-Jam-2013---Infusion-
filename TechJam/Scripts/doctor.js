@@ -50,13 +50,25 @@
     }
 
     ko.applyBindings(vm);
+    
+    function getURLParameter(name) {
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
+    }
+
     var mapOptions = {
         zoom: 15,
         center: new google.maps.LatLng(32.314647, -110.915595),
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
+    
     var map = new google.maps.Map(document.getElementById("map-host"), mapOptions);
     $('#doctor-modal').on('shown.bs.modal', function () {
         google.maps.event.trigger(map, "resize");
     });
+    
+    var doctorId = getURLParameter('doctorId');
+
+    if (doctorId != null) {
+        $('#doctorId_' + doctorId).click();
+    }
 });
