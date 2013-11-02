@@ -299,6 +299,7 @@
     <Content Include="Images\fitness.jpg" />
     <Content Include="Images\genetics.jpg" />
     <Content Include="Images\insurance.jpg" />
+    <Content Include="Images\nightingale-logo.png" />
     <Content Include="Images\nutrition.jpg" />
     <Content Include="Images\politics.jpg" />
     <Content Include="Images\prevention.jpg" />
@@ -308,6 +309,7 @@
     <Content Include="Scripts\appointment.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\chat.js" />
+    <Content Include="Scripts\speech.js" />
     <Content Include="Scripts\history.js" />
     <Content Include="Scripts\doctor.js" />
     <Content Include="Scripts\flot\chart-data-flot.js" />

@@ -7,3 +7,10 @@
     height: 300px;
     width: 100%
 }
+.logo-image {
+    width: 100px;
+}
+
+#morris-chart-area{
+    height: 150px;  
+}
