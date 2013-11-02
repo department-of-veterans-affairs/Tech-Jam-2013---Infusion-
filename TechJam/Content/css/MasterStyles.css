@@ -30,6 +30,10 @@
     height: 300px;
 }
 
+.chat-video {
+    height: 300px;
+    width: 100%
+}
 .logo-image {
     width: 100px;
 }
