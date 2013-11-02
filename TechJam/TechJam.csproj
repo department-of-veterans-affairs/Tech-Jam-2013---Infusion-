@@ -232,6 +232,7 @@
     <Content Include="Content\font-awesome\css\font-awesome-ie7.min.css" />
     <Content Include="Content\font-awesome\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="Content\css\jquery-ui.css" />
     <Content Include="favicon.ico" />
     <Content Include="font\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
